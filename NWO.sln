@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DataAudit", "DataAudit\DataAudit.rptproj", "{3D24F58A-7C30-421D-9099-EAD9A5E78D62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Debug|Default.ActiveCfg = Debug
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Debug|Default.Build.0 = Debug
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Debug|Default.Deploy.0 = Debug
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.DebugLocal|Default.Build.0 = DebugLocal
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.ActiveCfg = Release
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.Build.0 = Release
+		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC433E39-0EDC-44C4-ADBC-BEF7237344A2}
+	EndGlobalSection
+EndGlobal
