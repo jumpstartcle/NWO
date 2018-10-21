@@ -52,7 +52,7 @@
     <DataSource Include="NWO.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Multiple Contacts Same Email Address.rdl" />
+    <Report Include="NWO Multiple Contacts Same Email Address.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
