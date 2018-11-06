@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO Multiple Contacts Same Email Address.rdl" />
+    <Report Include="NWO Organizations that are Not QDF.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
