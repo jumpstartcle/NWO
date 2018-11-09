@@ -112,7 +112,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.51042in</Width>
+                  <Width>1.78125in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.23958in</Width>
@@ -148,7 +148,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Number Of  Connections</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -183,8 +182,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Connection Record Created Date</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -219,7 +216,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Connection ID</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -252,7 +248,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Type</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -285,7 +280,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Research Institution ID (Related Organization 1)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -318,7 +312,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Research Institution Name (Related Organization 1)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -351,7 +344,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Company ID (Related Organization 2)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -384,7 +376,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Company Name (Related Organization 2)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -417,7 +408,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>Date of First Contact</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -452,7 +442,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>ESP Qualified Deal Flow Date</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -487,7 +476,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>ESP Client  Date</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -526,9 +514,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!NubrConn.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -560,9 +546,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!CreatedDate.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -594,9 +578,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ConnID.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -626,9 +608,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Type__c.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -658,9 +638,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Related_OrgID_1.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -690,9 +668,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Related_OrgName_1.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -722,9 +698,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Related_OrgID_2.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -754,9 +728,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Related_OrgName_2.Value</Value>
-                                  <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -787,7 +759,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>=Fields!Date_of_First_Contact__c.Value</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -822,7 +793,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>=Fields!QDF_Date.Value</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -857,7 +827,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                                 <TextRun>
                                   <Value>=Fields!ESP_Client_Date__c.Value</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
                                 </TextRun>
@@ -931,7 +900,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
             </SortExpressions>
             <Top>2.06069in</Top>
             <Height>0.46125in</Height>
-            <Width>16.25in</Width>
+            <Width>16.52083in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">
@@ -953,14 +922,12 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.37723in</Height>
-            <Width>16.11458in</Width>
+            <Height>0.375in</Height>
+            <Width>16.52083in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox6">
@@ -971,7 +938,9 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                 <TextRuns>
                   <TextRun>
                     <Value>Query Last Modified/Reviewed: 11/8/2018</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -980,9 +949,9 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.39112in</Top>
-            <Height>0.18056in</Height>
-            <Width>16.11458in</Width>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
+            <Width>16.52083in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -990,8 +959,6 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="textbox11">
@@ -1002,7 +969,9 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                 <TextRuns>
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1011,15 +980,13 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.57167in</Top>
-            <Height>0.20139in</Height>
-            <Width>16.11458in</Width>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
+            <Width>16.52083in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox13">
@@ -1109,9 +1076,9 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
-            <Top>0.84251in</Top>
+            <Top>0.675in</Top>
             <Height>1.21819in</Height>
-            <Width>16.11458in</Width>
+            <Width>16.52083in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1119,15 +1086,13 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.75472in</Height>
+        <Height>2.96305in</Height>
         <Style />
       </Body>
-      <Width>16.25in</Width>
+      <Width>16.58333in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
