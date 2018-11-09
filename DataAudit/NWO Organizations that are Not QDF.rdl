@@ -1473,8 +1473,7 @@
                 <Value>=Fields!CS_Name.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>3.03611in</Top>
-            <Left>0in</Left>
+            <Top>2.96667in</Top>
             <Height>0.43in</Height>
             <Width>21.52084in</Width>
             <ZIndex>1</ZIndex>
@@ -1552,7 +1551,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the Organizations that are Not Qualified Deal Flow (QDF) in Salesforce for the Time Period that needs reviewed.
+                    <Value>This report displays the Organizations that are Not Qualified Deal Flow (QDF) in Salesforce for the Time Period (Quarter) that needs reviewed.
 The goal is that any Companies that are eligible for ESP are marked as such prior to Quarterly Reporting on this program is completed.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
@@ -1641,7 +1640,7 @@ And the "Not ESP QDF, Reviewed By" is Blank.</Value>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as Qualified Deal Flow (QDF) and/or Core City (CC) if appropriate.</Value>
+                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as Qualified Deal Flow (QDF) if appropriate.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
@@ -1710,8 +1709,6 @@ And the "Not ESP QDF, Reviewed By" is Blank.</Value>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
