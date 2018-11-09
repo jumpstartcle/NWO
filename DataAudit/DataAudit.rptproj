@@ -56,6 +56,7 @@
     <Report Include="NWO ESP Do Not Survey Audit.rdl" />
     <Report Include="NWO ESP Quarterly Report SpinOff Connections Detail.rdl" />
     <Report Include="NWO Multiple Contacts Same Email Address.rdl" />
+    <Report Include="NWO Non-ESP Time Records Audit.rdl" />
     <Report Include="NWO Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="NWO Organizations that are Not QDF.rdl" />
   </ItemGroup>

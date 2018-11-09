@@ -2,8 +2,8 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+    <DataSource Name="NWO">
+      <DataSourceReference>NWO</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -11,7 +11,7 @@
   <DataSets>
     <DataSet Name="NonESPTimeRecordsAudit">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
@@ -21,7 +21,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_NonESPTimeRecordsAudit</CommandText>
+        <CommandText>uspNWO_DA_NonESPTimeRecordsAudit</CommandText>
       </Query>
       <Fields>
         <Field Name="OrganizationName">
@@ -36,8 +36,8 @@
           <DataField>CSR_URL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Network_Services_Client_Date__c">
-          <DataField>Network_Services_Client_Date__c</DataField>
+        <Field Name="ESP_Client_Date__c">
+          <DataField>ESP_Client_Date__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Qualified_Deal_Flow_Date__c">
@@ -97,9 +97,9 @@
     </DataSet>
     <DataSet Name="NetworkPartners">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <CommandText>SELECT Id   , Name
-  FROM vwNetworkPartners
+  FROM vwNWO_NetworkPartners
 ORDER BY Name</CommandText>
       </Query>
       <Fields>
@@ -235,7 +235,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Network Services Client Date</Value>
+                                  <Value>ESP Client Date</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -618,14 +618,14 @@ ORDER BY Name</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Network_Services_Client_Date__c">
+                        <Textbox Name="ESP_Client_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Network_Services_Client_Date__c.Value</Value>
+                                  <Value>=Fields!ESP_Client_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -636,7 +636,7 @@ ORDER BY Name</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Network_Services_Client_Date__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Client_Date__c</rd:DefaultName>
                           <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
@@ -972,7 +972,6 @@ ORDER BY Name</CommandText>
             </TablixRowHierarchy>
             <DataSetName>NonESPTimeRecordsAudit</DataSetName>
             <Top>1.14583in</Top>
-            <Left>0in</Left>
             <Height>0.5in</Height>
             <Width>20.62499in</Width>
             <Style />
@@ -984,7 +983,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Non-ESP Time Records Audit</Value>
+                    <Value>NWO Non-ESP Time Records Audit</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -996,7 +995,6 @@ ORDER BY Name</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox6</rd:DefaultName>
-            <Left>0in</Left>
             <Height>0.375in</Height>
             <Width>20.62499in</Width>
             <ZIndex>1</ZIndex>
@@ -1025,7 +1023,6 @@ ORDER BY Name</CommandText>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.525in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>20.62499in</Width>
             <ZIndex>2</ZIndex>
@@ -1044,7 +1041,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Queries Last Modified/Reviewed: 08/13/2018</Value>
+                    <Value>Queries Last Modified/Reviewed: 11/09/2018</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>
@@ -1057,7 +1054,6 @@ ORDER BY Name</CommandText>
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.375in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>20.62499in</Width>
             <ZIndex>3</ZIndex>
@@ -1089,7 +1085,6 @@ ORDER BY Name</CommandText>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.675in</Top>
-            <Left>0in</Left>
             <Height>0.26388in</Height>
             <Width>20.62499in</Width>
             <ZIndex>4</ZIndex>
