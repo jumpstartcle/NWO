@@ -559,7 +559,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Time Records Not Tied to JumpStart or a Network Partner Contact Record</Value>
+                <Value>NWO Time Records Not Tied to a NWO Network Partner Contact Record</Value>
                 <Style>
                   <FontFamily>Tahoma</FontFamily>
                   <FontSize>20pt</FontSize>
@@ -657,8 +657,8 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce</DataSourceReference>
+    <DataSource Name="NWO">
+      <DataSourceReference>NWO</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8e667737-7d09-4060-8692-87255cc08bc8</rd:DataSourceID>
     </DataSource>
@@ -666,9 +666,9 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_TimeRecordsNonNetworkContactRecord</CommandText>
+        <CommandText>uspNWO_DA_TimeRecordsNonNetworkContactRecord</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -698,6 +698,10 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Field>
         <Field Name="Link_to_Record_in_Salesforce">
           <DataField>Link to Record in Salesforce</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

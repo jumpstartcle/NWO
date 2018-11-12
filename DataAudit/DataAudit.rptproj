@@ -59,6 +59,7 @@
     <Report Include="NWO Non-ESP Time Records Audit.rdl" />
     <Report Include="NWO Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="NWO Organizations that are Not QDF.rdl" />
+    <Report Include="NWO Time Records NonNetwork Contact Record.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
