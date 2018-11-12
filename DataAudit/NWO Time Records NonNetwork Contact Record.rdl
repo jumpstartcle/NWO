@@ -6,6 +6,9 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
+              <Width>2.27083in</Width>
+            </TablixColumn>
+            <TablixColumn>
               <Width>1.64008in</Width>
             </TablixColumn>
             <TablixColumn>
@@ -31,6 +34,37 @@
             <TablixRow>
               <Height>0.25in</Height>
               <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Client Services Name</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="textbox3">
@@ -255,6 +289,35 @@
             <TablixRow>
               <Height>0.25in</Height>
               <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="CS_Name">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CS_Name.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CS_Name</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="RecordCreatedBy">
@@ -483,6 +546,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -520,7 +584,7 @@
         <Top>1.87153in</Top>
         <Left>0.00002in</Left>
         <Height>0.5in</Height>
-        <Width>12.63682in</Width>
+        <Width>14.90765in</Width>
         <Style />
       </Tablix>
       <Textbox Name="textbox4">
@@ -543,7 +607,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         <Top>0.84723in</Top>
         <Left>0.00001in</Left>
         <Height>0.90278in</Height>
-        <Width>12.63683in</Width>
+        <Width>14.90766in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
@@ -572,7 +636,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Paragraphs>
         <rd:DefaultName>textbox6</rd:DefaultName>
         <Height>0.375in</Height>
-        <Width>12.63683in</Width>
+        <Width>14.90766in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
@@ -601,7 +665,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         <Top>0.525in</Top>
         <Left>0.00001in</Left>
         <Height>0.15in</Height>
-        <Width>12.63683in</Width>
+        <Width>14.90766in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -618,7 +682,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Queries Last Modified/Reviewed: 08/14/2018</Value>
+                <Value>Queries Last Modified/Reviewed:11/12/2018</Value>
                 <Style>
                   <FontSize>9pt</FontSize>
                 </Style>
@@ -633,7 +697,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         <Top>0.375in</Top>
         <Left>0.00001in</Left>
         <Height>0.15in</Height>
-        <Width>12.63683in</Width>
+        <Width>14.90766in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -647,7 +711,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
     <Height>2.42708in</Height>
     <Style />
   </Body>
-  <Width>12.63824in</Width>
+  <Width>14.97017in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -658,7 +722,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO</DataSourceReference>
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8e667737-7d09-4060-8692-87255cc08bc8</rd:DataSourceID>
     </DataSource>
@@ -702,6 +766,10 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Field>
         <Field Name="Name">
           <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CS_Name">
+          <DataField>CS_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

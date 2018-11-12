@@ -4,9 +4,9 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO</DataSourceReference>
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>cb1fec5d-1540-4ca1-becc-638aa5f4d853</rd:DataSourceID>
+      <rd:DataSourceID>0570909a-2e58-40a9-9b25-dba86e85f04d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>

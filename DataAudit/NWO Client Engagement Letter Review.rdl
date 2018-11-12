@@ -3,9 +3,9 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO</DataSourceReference>
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>afb60896-52e2-4a87-8fb2-dcaf9139a63d</rd:DataSourceID>
+      <rd:DataSourceID>1527953f-77ca-477e-81ac-e7974d24635c</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -731,7 +731,6 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Left>0in</Left>
             <Height>0.375in</Height>
             <Width>13.01042in</Width>
             <ZIndex>1</ZIndex>
@@ -760,7 +759,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
             <Top>0.375in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>13.01042in</Width>
             <ZIndex>2</ZIndex>
@@ -792,7 +790,6 @@
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
             <Top>0.525in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>13.01042in</Width>
             <ZIndex>3</ZIndex>
@@ -940,7 +937,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
             <Top>0.675in</Top>
-            <Left>0in</Left>
             <Height>1.24944in</Height>
             <Width>13.01042in</Width>
             <ZIndex>4</ZIndex>

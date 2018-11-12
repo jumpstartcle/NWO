@@ -49,7 +49,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="NWO.rds" />
+    <DataSource Include="NWO-Read.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO Client Engagement Letter Review.rdl" />
