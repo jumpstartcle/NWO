@@ -707,7 +707,7 @@
                 <Direction>Descending</Direction>
               </SortExpression>
             </SortExpressions>
-            <Top>1.99388in</Top>
+            <Top>1.57027in</Top>
             <Height>0.4925in</Height>
             <Width>13.01042in</Width>
             <Style />
@@ -890,54 +890,20 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Report Sort Order</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>Underline</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Total ESP Time Spent</Value>
-                    <Style>
-                      <FontWeight>Bold</FontWeight>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> (Descending)</Value>
-                    <Style>
-                      <FontWeight>Normal</FontWeight>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
                     <Value />
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox13</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>1.24944in</Height>
+            <Height>0.89527in</Height>
             <Width>13.01042in</Width>
             <ZIndex>4</ZIndex>
             <Style>
