@@ -581,8 +581,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>1.87153in</Top>
-        <Left>0.00002in</Left>
+        <Top>1.64722in</Top>
         <Height>0.5in</Height>
         <Width>14.90765in</Width>
         <Style />
@@ -604,16 +603,13 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox4</rd:DefaultName>
-        <Top>0.84723in</Top>
-        <Left>0.00001in</Left>
+        <Top>0.675in</Top>
         <Height>0.90278in</Height>
         <Width>14.90766in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <PaddingLeft>2pt</PaddingLeft>
           <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
       <Textbox Name="textbox6">
@@ -663,7 +659,6 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Paragraphs>
         <rd:DefaultName>Textbox21</rd:DefaultName>
         <Top>0.525in</Top>
-        <Left>0.00001in</Left>
         <Height>0.15in</Height>
         <Width>14.90766in</Width>
         <ZIndex>3</ZIndex>
@@ -695,7 +690,6 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Paragraphs>
         <rd:DefaultName>Textbox23</rd:DefaultName>
         <Top>0.375in</Top>
-        <Left>0.00001in</Left>
         <Height>0.15in</Height>
         <Width>14.90766in</Width>
         <ZIndex>4</ZIndex>
@@ -708,7 +702,7 @@ Note that records marked Locked will need to be updated by an Administrator.</Va
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>2.42708in</Height>
+    <Height>2.26041in</Height>
     <Style />
   </Body>
   <Width>14.97017in</Width>
