@@ -122,40 +122,40 @@ ORDER BY Name</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.91382in</Width>
+                  <Width>3.2159in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.52083in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.40057in</Width>
+                  <Width>1.22349in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.51042in</Width>
+                  <Width>1.27084in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.50758in</Width>
+                  <Width>2.36175in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.28882in</Width>
+                  <Width>1.16382in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.6998in</Width>
+                  <Width>1.86647in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.10133in</Width>
+                  <Width>3.393in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.95833in</Width>
+                  <Width>2.29166in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.99716in</Width>
+                  <Width>0.97633in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.23675in</Width>
+                  <Width>1.00758in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.48958in</Width>
+                  <Width>0.94791in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -301,7 +301,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Do Not Survey  Reason</Value>
+                                  <Value>ESP Do Not Survey Reason</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -332,13 +332,15 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Date (of Time Tracking Record)</Value>
+                                  <Value>Date </Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox9</rd:DefaultName>
@@ -363,7 +365,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Person (who recorded time)</Value>
+                                  <Value>Person </Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -456,7 +458,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Time Spent</Value>
+                                  <Value>Non-ESP Time Spent</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -495,7 +497,9 @@ ORDER BY Name</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox50</rd:DefaultName>
@@ -526,7 +530,9 @@ ORDER BY Name</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -728,7 +734,9 @@ ORDER BY Name</CommandText>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>TT_Date</rd:DefaultName>
@@ -878,7 +886,9 @@ ORDER BY Name</CommandText>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Total_ESP_Time_Spent__c</rd:DefaultName>
@@ -908,7 +918,9 @@ ORDER BY Name</CommandText>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Total_Time_Spent__c</rd:DefaultName>
@@ -971,9 +983,10 @@ ORDER BY Name</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>NonESPTimeRecordsAudit</DataSetName>
-            <Top>1.14583in</Top>
+            <Top>2.63638in</Top>
+            <Left>0in</Left>
             <Height>0.5in</Height>
-            <Width>20.62499in</Width>
+            <Width>21.2396in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox6">
@@ -996,7 +1009,7 @@ ORDER BY Name</CommandText>
             </Paragraphs>
             <rd:DefaultName>textbox6</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>20.62499in</Width>
+            <Width>21.2396in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1024,7 +1037,7 @@ ORDER BY Name</CommandText>
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>20.62499in</Width>
+            <Width>21.2396in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1055,7 +1068,7 @@ ORDER BY Name</CommandText>
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>20.62499in</Width>
+            <Width>21.2396in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1072,7 +1085,168 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Status update to the Network Partners about the Non-ESP Time logged in Salesforce. This time can only be logged by ESP Network Partners.</Value>
+                    <Value>Displays all Time Tracking Records by Network Partner if their Clients Time Tracking Records include NON-ESP Time.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>The Time Tracking Records are included in the report if:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            The Time Tracking Record Date is between the Time Tracking Start Date and the Time Tracking End Date in the Report Parameters.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            And the Client Services Record Type equals ‘NWO Services’.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            And the Time Tracking Record Type equals ‘Non-ESP Time Collaborators’, ‘Non-ESP Time Collaborators Locked’, ‘Non-ESP Time Staff’ or ‘Non-ESP Time Staff Locked’.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            And the Time Tracking Date is less than or equal to the ESP Do Not Survey Date.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            OR the ESP Client Date is NOT Blank and the ESP Do Not Survey Date is Blank.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>            OR the ESP Qualified Deal Flow Date is NOT Blank, and the ESP Client Date is Blank and the ESP Do Not Survey Date is Blank.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Purpose of Report</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>To provide a status update to the Network Partners about the Non-ESP Time logged in Salesforce. This time can only be logged by ESP Network Partners.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1080,13 +1254,48 @@ ORDER BY Name</CommandText>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value xml:space="preserve">           </Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Bold</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>0.26388in</Height>
-            <Width>20.62499in</Width>
+            <Left>0in</Left>
+            <Height>1.95138in</Height>
+            <Width>21.2396in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1099,10 +1308,10 @@ ORDER BY Name</CommandText>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>1.77778in</Height>
+        <Height>3.2257in</Height>
         <Style />
       </Body>
-      <Width>20.62499in</Width>
+      <Width>21.2396in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>
