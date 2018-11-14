@@ -894,7 +894,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
                 <Value>=Fields!Related_OrgName_2.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.06069in</Top>
+            <Top>1.89319in</Top>
             <Height>0.46125in</Height>
             <Width>16.52083in</Width>
             <Style />
@@ -1085,7 +1085,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.96305in</Height>
+        <Height>2.47347in</Height>
         <Style />
       </Body>
       <Width>16.58333in</Width>
@@ -1115,7 +1115,7 @@ WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
           <Value>=Today()</Value>
         </Values>
       </DefaultValue>
-      <Prompt>To</Prompt>
+      <Prompt>Created Date To</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
