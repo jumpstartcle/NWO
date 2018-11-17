@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DataAudit", "DataAudit\DataAudit.rptproj", "{3D24F58A-7C30-421D-9099-EAD9A5E78D62}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Survey", "Survey\Survey.rptproj", "{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -20,6 +22,14 @@ Global
 		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.ActiveCfg = Release
 		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.Build.0 = Release
 		{3D24F58A-7C30-421D-9099-EAD9A5E78D62}.Release|Default.Deploy.0 = Release
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Debug|Default.ActiveCfg = Debug
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Debug|Default.Build.0 = Debug
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Debug|Default.Deploy.0 = Debug
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.DebugLocal|Default.Build.0 = DebugLocal
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.ActiveCfg = Release
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.Build.0 = Release
+		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
