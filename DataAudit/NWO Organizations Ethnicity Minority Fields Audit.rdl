@@ -872,8 +872,7 @@
                 <Value>=Fields!OrgName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.31097in</Top>
-            <Left>0in</Left>
+            <Top>2.25542in</Top>
             <Height>0.78417in</Height>
             <Width>17.5353in</Width>
             <Style />
@@ -1190,7 +1189,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>3.49475in</Height>
+        <Height>3.14058in</Height>
         <Style />
       </Body>
       <Width>17.61052in</Width>
