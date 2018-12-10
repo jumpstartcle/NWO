@@ -798,16 +798,15 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>UncompletedSurveys</DataSetName>
-            <Top>0.06944in</Top>
             <Height>0.5in</Height>
             <Width>17.30491in</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.76736in</Height>
+        <Height>0.66319in</Height>
         <Style />
       </Body>
-      <Width>17.39866in</Width>
+      <Width>17.89866in</Width>
       <Page>
         <PageHeader>
           <Height>1.88889in</Height>
@@ -1074,14 +1073,6 @@
           <ParameterValue>
             <Value>ESP Survey</Value>
             <Label>ESP Survey</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>Core City Survey</Value>
-            <Label>Core City Survey</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>BGC Survey</Value>
-            <Label>BGC Survey</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
