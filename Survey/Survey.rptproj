@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO PrelimSurveyList.rdl" />
+    <Report Include="NWO SurveyResponseRates.rdl" />
     <Report Include="NWO UncompletedSurveys.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
