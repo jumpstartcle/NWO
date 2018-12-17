@@ -1706,7 +1706,7 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.03264in</Top>
+            <Top>1.36398in</Top>
             <Height>1.25in</Height>
             <Width>12in</Width>
             <Style />
@@ -1786,7 +1786,7 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox10</rd:DefaultName>
-            <Top>0.3in</Top>
+            <Top>0.68889in</Top>
             <Height>0.6632in</Height>
             <Width>12in</Width>
             <ZIndex>1</ZIndex>
@@ -1817,7 +1817,7 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
-            <Top>0.15in</Top>
+            <Top>0.525in</Top>
             <Height>0.15in</Height>
             <Width>12in</Width>
             <ZIndex>2</ZIndex>
@@ -1848,6 +1848,7 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
+            <Top>0.375in</Top>
             <Height>0.15in</Height>
             <Width>12in</Width>
             <ZIndex>3</ZIndex>
@@ -1859,46 +1860,40 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               <PaddingRight>2pt</PaddingRight>
             </Style>
           </Textbox>
+          <Textbox Name="textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>NWO Survey Response Rates</Value>
+                    <Style>
+                      <FontFamily>Tahoma</FontFamily>
+                      <FontSize>20pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0in</Top>
+            <Height>0.375in</Height>
+            <Width>12in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>2.3611in</Height>
+        <Height>3.4236in</Height>
         <Style />
       </Body>
-      <Width>12in</Width>
+      <Width>12.76042in</Width>
       <Page>
-        <PageHeader>
-          <Height>0.375in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="textbox1">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>NWO Survey Response Rates</Value>
-                      <Style>
-                        <FontFamily>Tahoma</FontFamily>
-                        <FontSize>20pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>textbox1</rd:DefaultName>
-              <Height>0.375in</Height>
-              <Width>12in</Width>
-              <Style>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-              </Style>
-            </Textbox>
-          </ReportItems>
-          <Style />
-        </PageHeader>
         <LeftMargin>0.25in</LeftMargin>
         <RightMargin>0.25in</RightMargin>
         <TopMargin>0.25in</TopMargin>
