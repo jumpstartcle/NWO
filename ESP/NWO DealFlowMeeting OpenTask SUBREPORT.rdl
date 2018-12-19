@@ -2,8 +2,8 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce">
-      <DataSourceReference>/Data Sources/SalesForce-Read</DataSourceReference>
+    <DataSource Name="NWO">
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>4e7ef41c-d572-432b-88b6-1f3600b38354</rd:DataSourceID>
     </DataSource>
@@ -11,32 +11,14 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@OppId">
-            <Value>=Parameters!OppId.Value</Value>
+          <QueryParameter Name="@CSId">
+            <Value>=Parameters!CSID.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>select c.Name "AssignedTo"
-, acc.Name "AssignedOrg"
-, act.ActivityDate "DueDate"
-, act.Subject
-, act.Comments
-, act.Status
-, act.Id "ActId"
-, "Overdue" = case
- when act.activitydate &lt; getdate() then 1 else 0 end
-from (select ID, activitydate, whatid, subject, status, CONVERT(varchar(1000), description) "Comments", ownerid
-from Task
-where Status not in ('Completed','Canceled')
-union
-select ID, activitydate, whatid, subject, 'Future Event', CONVERT(varchar(1000), description) "Comments", ownerid
-from event
-where ActivityDate &gt; GETDATE()) act
-inner join [User] u on act.OwnerId = u.Id
-inner join Contact c on c.Id = u.User_to_Contact_lookup__c
-inner join Account acc on c.AccountId = acc.id
-where act.WhatId = @OppId</CommandText>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspNWO_DealFlowMeetingOpenTask</CommandText>
       </Query>
       <Fields>
         <Field Name="AssignedTo">
@@ -71,6 +53,14 @@ where act.WhatId = @OppId</CommandText>
           <DataField>Overdue</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="WhatId">
+          <DataField>WhatId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Act_URL">
+          <DataField>Act_URL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -82,19 +72,19 @@ where act.WhatId = @OppId</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.13542in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.14167in</Width>
+                  <Width>2.25625in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>6in</Width>
+                  <Width>4.05208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.01042in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>2.04167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -530,7 +520,7 @@ where act.WhatId = @OppId</CommandText>
                           <ActionInfo>
                             <Actions>
                               <Action>
-                                <Hyperlink>="https://na2.salesforce.com/" &amp; Fields!ActId.Value</Hyperlink>
+                                <Hyperlink>=Fields!Act_URL.Value</Hyperlink>
                               </Action>
                             </Actions>
                           </ActionInfo>
@@ -538,26 +528,6 @@ where act.WhatId = @OppId</CommandText>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
                             <BackgroundColor>=IIf(Fields!Overdue.Value=1,"Red","No Color")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -565,6 +535,7 @@ where act.WhatId = @OppId</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -646,7 +617,7 @@ where act.WhatId = @OppId</CommandText>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Height>0.5in</Height>
-            <Width>11.14167in</Width>
+            <Width>10.49584in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -657,7 +628,7 @@ where act.WhatId = @OppId</CommandText>
         <Height>0.51042in</Height>
         <Style />
       </Body>
-      <Width>11.14167in</Width>
+      <Width>10.49584in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>14in</PageWidth>
@@ -666,9 +637,9 @@ where act.WhatId = @OppId</CommandText>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="OppId">
+    <ReportParameter Name="CSID">
       <DataType>String</DataType>
-      <Prompt>Opp Id</Prompt>
+      <Prompt>CS Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
@@ -679,7 +650,7 @@ where act.WhatId = @OppId</CommandText>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>OppId</ParameterName>
+          <ParameterName>CSID</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
