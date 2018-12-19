@@ -7,6 +7,8 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DataAudit", "DataAudit\Data
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Survey", "Survey\Survey.rptproj", "{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ESP", "ESP\ESP.rptproj", "{D3807EEF-DD27-4781-B0E1-BAC4948882F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -30,6 +32,15 @@ Global
 		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.ActiveCfg = Release
 		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.Build.0 = Release
 		{C96FA2C7-CDA1-41D7-B58B-2FE9694247C9}.Release|Default.Deploy.0 = Release
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Debug|Default.ActiveCfg = Debug
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Debug|Default.Build.0 = Debug
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Debug|Default.Deploy.0 = Debug
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.DebugLocal|Default.Build.0 = DebugLocal
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Release|Default.ActiveCfg = Release
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Release|Default.Build.0 = Release
+		{D3807EEF-DD27-4781-B0E1-BAC4948882F6}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
