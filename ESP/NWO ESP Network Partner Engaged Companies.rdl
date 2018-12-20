@@ -378,7 +378,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Client Engagement  Letter Collaborator</Value>
+                                  <Value>CEL Collaborator</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -502,7 +502,7 @@ ORDER BY Name</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Operating Stage</Value>
+                                  <Value>NWOStage</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -2802,7 +2802,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Queries Last Modified/Reviewed:  12/18/2018</Value>
+                    <Value>Queries Last Modified/Reviewed:  12/19/2018</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>
