@@ -43,12 +43,9 @@ ORDER BY monthone DESC</CommandText>
           <QueryParameter Name="@TimeOff">
             <Value>=Parameters!TimeOff.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@DeptCode">
-            <Value>=system.DBNull.value</Value>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspttJSemployee</CommandText>
+        <CommandText>uspNWO_ttEmployee</CommandText>
       </Query>
       <Fields>
         <Field Name="contactname">
@@ -143,6 +140,10 @@ ORDER BY monthone DESC</CommandText>
           <DataField>Title</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="allocations__c">
+          <DataField>allocations__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="DirectCT">
           <DataField>DirectCT</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -163,10 +164,6 @@ ORDER BY monthone DESC</CommandText>
           <DataField>CSname</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPname">
-          <DataField>SPname</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Comments">
           <DataField>Comments</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -181,10 +178,8 @@ ORDER BY monthone DESC</CommandText>
             <Value>=Parameters!Active.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT        Id, Name, IsActive
-FROM            [User]
-WHERE        (CompanyName = 'JumpStart Inc.') AND (IsActive IN (@Active))
-ORDER BY Name</CommandText>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspNWO_Staff</CommandText>
       </Query>
       <Fields>
         <Field Name="Id">
@@ -214,7 +209,7 @@ ORDER BY Name</CommandText>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspttJSemployeePTO</CommandText>
+        <CommandText>uspNWO_ttEmployeePTO</CommandText>
       </Query>
       <Fields>
         <Field Name="DaysUsed">
@@ -223,7 +218,7 @@ ORDER BY Name</CommandText>
         </Field>
         <Field Name="PTOallowed">
           <DataField>PTOallowed</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="HrsUsed">
           <DataField>HrsUsed</DataField>
@@ -231,7 +226,7 @@ ORDER BY Name</CommandText>
         </Field>
         <Field Name="PTOLeft">
           <DataField>PTOLeft</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -248,7 +243,7 @@ ORDER BY Name</CommandText>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspttJSemployeeCLE</CommandText>
+        <CommandText>uspNWO_ttEmployeeCLE</CommandText>
       </Query>
       <Fields>
         <Field Name="userid">
@@ -5751,18 +5746,6 @@ ORDER BY Name</CommandText>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
-            <Image Name="Image4">
-              <Source>Embedded</Source>
-              <Value>jumpstart_logo</Value>
-              <Sizing>FitProportional</Sizing>
-              <Height>0.58208in</Height>
-              <Width>1.20139in</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
             <Textbox Name="Textbox1">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
@@ -5783,10 +5766,9 @@ ORDER BY Name</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Left>1.27083in</Left>
+              <Left>0.06125in</Left>
               <Height>0.29041in</Height>
-              <Width>3.99653in</Width>
-              <ZIndex>1</ZIndex>
+              <Width>6.83957in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -5817,10 +5799,10 @@ ORDER BY Name</CommandText>
               </Paragraphs>
               <rd:DefaultName>employeenumber</rd:DefaultName>
               <Top>0.33208in</Top>
-              <Left>1.28471in</Left>
+              <Left>0.07513in</Left>
               <Height>0.25in</Height>
-              <Width>2.70833in</Width>
-              <ZIndex>2</ZIndex>
+              <Width>6.82569in</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -5850,7 +5832,7 @@ ORDER BY Name</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Query Last Modified/Reviewed: 02/25/2018</Value>
+                      <Value>Query Last Modified/Reviewed: 01/03/2019</Value>
                       <Style>
                         <FontSize>8pt</FontSize>
                       </Style>
@@ -5860,9 +5842,9 @@ ORDER BY Name</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox34</rd:DefaultName>
-              <Top>0.06944in</Top>
+              <Top>0.18402in</Top>
               <Left>0.01042in</Left>
-              <Height>0.3125in</Height>
+              <Height>0.19792in</Height>
               <Width>2.86458in</Width>
               <Style>
                 <Border>
@@ -5893,9 +5875,9 @@ ORDER BY Name</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox34</rd:DefaultName>
-              <Top>0.06944in</Top>
+              <Top>0.18402in</Top>
               <Left>4.62847in</Left>
-              <Height>0.3125in</Height>
+              <Height>0.19792in</Height>
               <Width>5.84375in</Width>
               <ZIndex>1</ZIndex>
               <Style>
@@ -5967,7 +5949,7 @@ ORDER BY Name</CommandText>
           <ValueField>monthone</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>Mon-YYYY (e.g. Nov-2011)</Prompt>
+      <Prompt>Mon-YYYY (e.g. Nov-2018)</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>DateParam</DataSetName>
