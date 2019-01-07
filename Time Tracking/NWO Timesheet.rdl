@@ -144,12 +144,12 @@ ORDER BY monthone DESC</CommandText>
           <DataField>allocations__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="DirectCT">
-          <DataField>DirectCT</DataField>
+        <Field Name="IndividualCS">
+          <DataField>IndividualCS</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="InDirectCT">
-          <DataField>InDirectCT</DataField>
+        <Field Name="Collective">
+          <DataField>Collective</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ESPOther">
@@ -162,6 +162,10 @@ ORDER BY monthone DESC</CommandText>
         </Field>
         <Field Name="CSname">
           <DataField>CSname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Time_Tracking_Grouping__c">
+          <DataField>Time_Tracking_Grouping__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Comments">
@@ -2440,18 +2444,18 @@ ORDER BY monthone DESC</CommandText>
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>0.05893in</Height>
+                      <Height>0.05416in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="DirectCT">
+                            <Textbox Name="IndividualCS1">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!DirectCT.Value</Value>
+                                      <Value>=Fields!IndividualCS.Value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -2460,7 +2464,7 @@ ORDER BY monthone DESC</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>DirectCT</rd:DefaultName>
+                              <rd:DefaultName>IndividualCS1</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -2476,14 +2480,14 @@ ORDER BY monthone DESC</CommandText>
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="InDirectCT">
+                            <Textbox Name="Collective1">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!InDirectCT.Value</Value>
+                                      <Value>=Fields!Collective.Value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -2492,7 +2496,7 @@ ORDER BY monthone DESC</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>InDirectCT</rd:DefaultName>
+                              <rd:DefaultName>Collective1</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Color>LightGrey</Color>
@@ -2577,14 +2581,14 @@ ORDER BY monthone DESC</CommandText>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox51">
+                            <Textbox Name="IndividualCS">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Sum(Fields!DirectCT.Value)</Value>
+                                      <Value>=Sum(Fields!IndividualCS.Value)</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -2593,7 +2597,7 @@ ORDER BY monthone DESC</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox51</rd:DefaultName>
+                              <rd:DefaultName>IndividualCS</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -2628,14 +2632,14 @@ ORDER BY monthone DESC</CommandText>
                         </TablixCell>
                         <TablixCell>
                           <CellContents>
-                            <Textbox Name="Textbox70">
+                            <Textbox Name="Collective">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Sum(Fields!InDirectCT.Value)</Value>
+                                      <Value>=Sum(Fields!Collective.Value)</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -2644,7 +2648,7 @@ ORDER BY monthone DESC</CommandText>
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Textbox70</rd:DefaultName>
+                              <rd:DefaultName>Collective</rd:DefaultName>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -2793,7 +2797,7 @@ ORDER BY monthone DESC</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=SUM(Fields!DirectCT.Value) / (SUM(Fields!DirectCT.Value)+ SUM(Fields!InDirectCT.Value)
+                                      <Value>=SUM(Fields!IndividualCS.Value) / (SUM(Fields!IndividualCS.Value)+ SUM(Fields!Collective.Value)
 + SUM(Fields!ESPOther.Value) + SUM(Fields!ESPNonCT.Value))</Value>
                                       <Style>
                                         <Format>0.0%</Format>
@@ -2847,7 +2851,7 @@ ORDER BY monthone DESC</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=SUM(Fields!InDirectCT.Value) / (SUM(Fields!DirectCT.Value)+ SUM(Fields!InDirectCT.Value)
+                                      <Value>=SUM(Fields!Collective.Value) / (SUM(Fields!IndividualCS.Value)+ SUM(Fields!Collective.Value)
 + SUM(Fields!ESPOther.Value) + SUM(Fields!ESPNonCT.Value))</Value>
                                       <Style>
                                         <Format>0.0%</Format>
@@ -2901,7 +2905,7 @@ ORDER BY monthone DESC</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=SUM(Fields!ESPOther.Value) / (SUM(Fields!DirectCT.Value)+ SUM(Fields!InDirectCT.Value)
+                                      <Value>=SUM(Fields!ESPOther.Value) / (SUM(Fields!IndividualCS.Value)+ SUM(Fields!Collective.Value)
 + SUM(Fields!ESPOther.Value) + SUM(Fields!ESPNonCT.Value))</Value>
                                       <Style>
                                         <Format>0.0%</Format>
@@ -2955,7 +2959,7 @@ ORDER BY monthone DESC</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=SUM(Fields!ESPNonCT.Value) / (SUM(Fields!DirectCT.Value)+ SUM(Fields!InDirectCT.Value)
+                                      <Value>=SUM(Fields!ESPNonCT.Value) / (SUM(Fields!IndividualCS.Value)+ SUM(Fields!Collective.Value)
 + SUM(Fields!ESPOther.Value) + SUM(Fields!ESPNonCT.Value))</Value>
                                       <Style>
                                         <Format>0.0%</Format>
@@ -3014,7 +3018,7 @@ ORDER BY monthone DESC</CommandText>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Sum(Fields!DirectCT.Value) + Sum(Fields!InDirectCT.Value)</Value>
+                                      <Value>=Sum(Fields!IndividualCS.Value) + Sum(Fields!Collective.Value)</Value>
                                       <Style>
                                         <FontWeight>Bold</FontWeight>
                                       </Style>
@@ -3162,7 +3166,7 @@ ORDER BY monthone DESC</CommandText>
                   </Filter>
                 </Filters>
                 <Left>4.22348in</Left>
-                <Height>0.96263in</Height>
+                <Height>0.95786in</Height>
                 <Width>3.79511in</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
