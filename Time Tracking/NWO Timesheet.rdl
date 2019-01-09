@@ -5740,7 +5740,7 @@ ORDER BY monthone DESC</CommandText>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>7.60014in</Height>
+        <Height>7.56889in</Height>
         <Style />
       </Body>
       <Width>11.70417in</Width>
@@ -5772,13 +5772,13 @@ ORDER BY monthone DESC</CommandText>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Left>0.06125in</Left>
               <Height>0.29041in</Height>
-              <Width>6.83957in</Width>
+              <Width>11.64292in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
                 <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>10pt</PaddingLeft>
+                <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
@@ -5805,7 +5805,7 @@ ORDER BY monthone DESC</CommandText>
               <Top>0.33208in</Top>
               <Left>0.07513in</Left>
               <Height>0.25in</Height>
-              <Width>6.82569in</Width>
+              <Width>11.62904in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -5880,7 +5880,7 @@ ORDER BY monthone DESC</CommandText>
               </Paragraphs>
               <rd:DefaultName>Textbox34</rd:DefaultName>
               <Top>0.18402in</Top>
-              <Left>4.62847in</Left>
+              <Left>5.86042in</Left>
               <Height>0.19792in</Height>
               <Width>5.84375in</Width>
               <ZIndex>1</ZIndex>
