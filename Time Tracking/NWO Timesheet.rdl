@@ -3169,6 +3169,9 @@ ORDER BY monthone DESC</CommandText>
                 <Height>0.95786in</Height>
                 <Width>3.79511in</Width>
                 <ZIndex>3</ZIndex>
+                <Visibility>
+                  <Hidden>true</Hidden>
+                </Visibility>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -3177,8 +3180,8 @@ ORDER BY monthone DESC</CommandText>
               </Tablix>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>5.81125in</Top>
-            <Left>0.06125in</Left>
+            <Top>5.80778in</Top>
+            <Left>0.03739in</Left>
             <Height>1.71944in</Height>
             <Width>8.12208in</Width>
             <ZIndex>2</ZIndex>
