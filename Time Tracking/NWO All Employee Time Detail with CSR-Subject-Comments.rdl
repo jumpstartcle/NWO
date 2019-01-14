@@ -1698,7 +1698,7 @@
                     <Value>="NWO All Employee Time Detail from " &amp; Parameters!StartDate.Value &amp; " through " &amp; Parameters!EndDate.Value</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
-                      <FontSize>22pt</FontSize>
+                      <FontSize>20pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
