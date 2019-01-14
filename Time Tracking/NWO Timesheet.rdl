@@ -1727,7 +1727,7 @@ ORDER BY monthone DESC</CommandText>
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>0.26042in</Height>
+                      <Height>0.38542in</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -2009,7 +2009,7 @@ ORDER BY monthone DESC</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>PTOinfo</DataSetName>
-                <Height>0.48972in</Height>
+                <Height>0.61472in</Height>
                 <Width>4.13667in</Width>
                 <Style>
                   <Border>
@@ -2165,7 +2165,7 @@ ORDER BY monthone DESC</CommandText>
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>CLEDates</DataSetName>
-                <Top>0.49449in</Top>
+                <Top>0.68199in</Top>
                 <Left>1.5773in</Left>
                 <Height>0.77778in</Height>
                 <Width>0.8427in</Width>
@@ -2192,7 +2192,7 @@ ORDER BY monthone DESC</CommandText>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox106</rd:DefaultName>
-                <Top>0.49449in</Top>
+                <Top>0.68199in</Top>
                 <Height>0.25926in</Height>
                 <Width>1.56341in</Width>
                 <ZIndex>2</ZIndex>
@@ -5743,7 +5743,7 @@ ORDER BY monthone DESC</CommandText>
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>7.56889in</Height>
+        <Height>7.52722in</Height>
         <Style />
       </Body>
       <Width>11.70417in</Width>
