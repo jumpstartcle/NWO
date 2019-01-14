@@ -269,7 +269,7 @@ ORDER BY monthone DESC</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.55in</Width>
+                  <Width>0.8in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.575in</Width>
@@ -1233,7 +1233,7 @@ ORDER BY monthone DESC</CommandText>
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.5in</Size>
+                    <Size>1.79167in</Size>
                     <CellContents>
                       <Textbox Name="Textbox24">
                         <CanGrow>true</CanGrow>
@@ -1305,7 +1305,7 @@ ORDER BY monthone DESC</CommandText>
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1.5in</Size>
+                        <Size>1.79167in</Size>
                         <CellContents>
                           <Textbox Name="Line_of_Business__c">
                             <CanGrow>true</CanGrow>
@@ -1378,7 +1378,7 @@ ORDER BY monthone DESC</CommandText>
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>1.5in</Size>
+                        <Size>1.79167in</Size>
                         <CellContents>
                           <Textbox Name="ProgramName">
                             <CanGrow>true</CanGrow>
@@ -1439,7 +1439,7 @@ ORDER BY monthone DESC</CommandText>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.5in</Size>
+                    <Size>1.79167in</Size>
                     <CellContents>
                       <Textbox Name="Textbox64">
                         <CanGrow>true</CanGrow>
@@ -1479,7 +1479,7 @@ ORDER BY monthone DESC</CommandText>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.5in</Size>
+                    <Size>1.79167in</Size>
                     <CellContents>
                       <Textbox Name="Textbox56">
                         <CanGrow>true</CanGrow>
@@ -1530,7 +1530,7 @@ ORDER BY monthone DESC</CommandText>
             </Filters>
             <Top>0.05556in</Top>
             <Height>1.10625in</Height>
-            <Width>3.74897in</Width>
+            <Width>4.29064in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5749,7 +5749,7 @@ ORDER BY monthone DESC</CommandText>
       <Width>11.70417in</Width>
       <Page>
         <PageHeader>
-          <Height>0.625in</Height>
+          <Height>0.63889in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -5775,7 +5775,7 @@ ORDER BY monthone DESC</CommandText>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Left>0.06125in</Left>
               <Height>0.29041in</Height>
-              <Width>11.64292in</Width>
+              <Width>5.30959in</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -5805,10 +5805,10 @@ ORDER BY monthone DESC</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>employeenumber</rd:DefaultName>
-              <Top>0.33208in</Top>
+              <Top>0.34597in</Top>
               <Left>0.07513in</Left>
               <Height>0.25in</Height>
-              <Width>11.62904in</Width>
+              <Width>5.29571in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -5849,9 +5849,9 @@ ORDER BY monthone DESC</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox34</rd:DefaultName>
-              <Top>0.18402in</Top>
+              <Top>0.06944in</Top>
               <Left>0.01042in</Left>
-              <Height>0.19792in</Height>
+              <Height>0.3125in</Height>
               <Width>2.86458in</Width>
               <Style>
                 <Border>
@@ -5882,9 +5882,9 @@ ORDER BY monthone DESC</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox34</rd:DefaultName>
-              <Top>0.18402in</Top>
-              <Left>5.86042in</Left>
-              <Height>0.19792in</Height>
+              <Top>0.06944in</Top>
+              <Left>4.62847in</Left>
+              <Height>0.3125in</Height>
               <Width>5.84375in</Width>
               <ZIndex>1</ZIndex>
               <Style>
