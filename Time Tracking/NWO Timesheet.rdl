@@ -2704,26 +2704,6 @@ ORDER BY monthone DESC</CommandText>
                                 <Border>
                                   <Style>Solid</Style>
                                 </Border>
-                                <TopBorder>
-                                  <Color>Black</Color>
-                                  <Style>Solid</Style>
-                                  <Width>1pt</Width>
-                                </TopBorder>
-                                <BottomBorder>
-                                  <Color>Black</Color>
-                                  <Style>Solid</Style>
-                                  <Width>1pt</Width>
-                                </BottomBorder>
-                                <LeftBorder>
-                                  <Color>Black</Color>
-                                  <Style>Solid</Style>
-                                  <Width>1pt</Width>
-                                </LeftBorder>
-                                <RightBorder>
-                                  <Color>Black</Color>
-                                  <Style>Solid</Style>
-                                  <Width>1pt</Width>
-                                </RightBorder>
                                 <PaddingLeft>2pt</PaddingLeft>
                                 <PaddingRight>2pt</PaddingRight>
                                 <PaddingTop>2pt</PaddingTop>
@@ -3161,7 +3141,7 @@ ORDER BY monthone DESC</CommandText>
                     <FilterExpression>=Fields!Line_of_Business__c.Value</FilterExpression>
                     <Operator>Equal</Operator>
                     <FilterValues>
-                      <FilterValue>="NEO_ESP"</FilterValue>
+                      <FilterValue>="NWO ESP"</FilterValue>
                     </FilterValues>
                   </Filter>
                 </Filters>
@@ -3169,9 +3149,6 @@ ORDER BY monthone DESC</CommandText>
                 <Height>0.95786in</Height>
                 <Width>3.79511in</Width>
                 <ZIndex>3</ZIndex>
-                <Visibility>
-                  <Hidden>true</Hidden>
-                </Visibility>
                 <Style>
                   <Border>
                     <Style>None</Style>
