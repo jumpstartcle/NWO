@@ -1524,7 +1524,7 @@
             <rd:DefaultName>Textbox14</rd:DefaultName>
             <Top>1.302in</Top>
             <Height>0.15in</Height>
-            <Width>17.42084in</Width>
+            <Width>16.10834in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1555,7 +1555,7 @@
             <rd:DefaultName>Textbox34</rd:DefaultName>
             <Top>1.452in</Top>
             <Height>0.15in</Height>
-            <Width>17.42084in</Width>
+            <Width>16.10834in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1678,7 +1678,7 @@
             <rd:DefaultName>Textbox34</rd:DefaultName>
             <Top>0.3263in</Top>
             <Height>0.9757in</Height>
-            <Width>17.42084in</Width>
+            <Width>16.10834in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1708,7 +1708,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox1</rd:DefaultName>
             <Height>0.3263in</Height>
-            <Width>17.42084in</Width>
+            <Width>16.10834in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1719,7 +1719,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>4.4375in</Height>
+        <Height>2.5in</Height>
         <Style />
       </Body>
       <Width>17.47292in</Width>
