@@ -304,7 +304,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays Time Tracking Records for Network Partners' Employees ;</Value>
+                    <Value>Displays Time Tracking Records for Network Partners' Employees where;</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -313,7 +313,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Activity Date in the Time Tracking Record is within the Month selected in the Report Parameter.</Value>
+                    <Value>The Person's (Staff) Organization spending time is an ESP Network Partner.</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -323,11 +323,22 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Does not include Time Off Records.</Value>
+                    <Value>And the Activity Date in the Time Tracking Record is within the Month selected in the Report Parameter.</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
                 <ListLevel>1</ListLevel>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
                 <Style />
               </Paragraph>
               <Paragraph>
@@ -337,6 +348,7 @@ ORDER BY monthone DESC</CommandText>
                     <Style />
                   </TextRun>
                 </TextRuns>
+                <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
             </Paragraphs>
@@ -357,19 +369,19 @@ ORDER BY monthone DESC</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.69834in</Width>
+                  <Width>2.70015in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.71917in</Width>
+                  <Width>1.72098in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.98958in</Width>
+                  <Width>0.99139in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.78124in</Width>
+                  <Width>2.78305in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.32167in</Width>
+                  <Width>5.32348in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1201,7 +1213,7 @@ ORDER BY monthone DESC</CommandText>
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.64583in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
                       <Textbox Name="Textbox52">
                         <CanGrow>true</CanGrow>
@@ -1210,7 +1222,7 @@ ORDER BY monthone DESC</CommandText>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Date</Value>
+                                <Value>Activity Date</Value>
                                 <Style>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
@@ -1252,7 +1264,7 @@ ORDER BY monthone DESC</CommandText>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1.64583in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
                       <Textbox Name="Date__c">
                         <CanGrow>true</CanGrow>
@@ -1320,7 +1332,7 @@ ORDER BY monthone DESC</CommandText>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1.64583in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
                       <Textbox Name="Textbox54">
                         <CanGrow>true</CanGrow>
@@ -1362,9 +1374,9 @@ ORDER BY monthone DESC</CommandText>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TimeRecords</DataSetName>
-            <Top>1.30083in</Top>
+            <Top>1.225in</Top>
             <Height>1.25471in</Height>
-            <Width>15.15584in</Width>
+            <Width>15.16669in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1373,7 +1385,7 @@ ORDER BY monthone DESC</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.68749in</Height>
+        <Height>2.57291in</Height>
         <Style />
       </Body>
       <Width>15.26042in</Width>
