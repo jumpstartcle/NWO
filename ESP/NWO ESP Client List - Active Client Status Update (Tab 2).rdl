@@ -3090,7 +3090,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a Network Services Client Date' that is less than the reporting period </Value>
+                    <Value>AND a ESP Client Date' that is less than the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3215,7 +3215,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a 'Network Services Client Date' that is less than the reporting period </Value>
+                    <Value>AND a 'ESP Client Date' that is less than the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3350,7 +3350,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a 'Network Services Client Date' that is less than or equal to the reporting period </Value>
+                    <Value>AND a 'ESP Client Date' that is less than or equal to the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
