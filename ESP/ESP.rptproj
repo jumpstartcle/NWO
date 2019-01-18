@@ -54,6 +54,8 @@
   <ItemGroup>
     <Report Include="NWO Deal Flow Meeting PrePost Report.rdl" />
     <Report Include="NWO DealFlowMeeting OpenTask SUBREPORT.rdl" />
+    <Report Include="NWO ESP Client List - Active Client Status Update (Tab 2).rdl" />
+    <Report Include="NWO ESP Client List - Client Metrics (Tab 3).rdl" />
     <Report Include="NWO ESP Network Partner Engaged Companies.rdl" />
     <Report Include="NWO ESP Quarterly Semi-Annual Report Client Detail.rdl" />
   </ItemGroup>
