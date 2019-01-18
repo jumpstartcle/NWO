@@ -2922,7 +2922,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The NWO ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NEO ESP Network.</Value>
+                    <Value>The NWO ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NWO ESP Network.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2980,7 +2980,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The 'Network Services Client Date' that is less than or equal to the column </Value>
+                    <Value>The 'ESP Client Date' that is less than or equal to the column </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3013,7 +3013,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Companies that have metrics (completed a survey) and have a Network Services Client Date that is greater than column </Value>
+                    <Value>Companies that have metrics (completed a survey) and have a ESP Client Date that is greater than column </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
