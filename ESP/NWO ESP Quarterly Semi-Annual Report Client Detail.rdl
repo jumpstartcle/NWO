@@ -25,7 +25,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspESP_QuarterSemiAnnual</CommandText>
+        <CommandText>uspNWO_ESP_QuarterSemiAnnual</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -101,6 +101,10 @@
           <DataField>ContactNameLast</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Short_Description__c">
+          <DataField>Short_Description__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="AccCity">
           <DataField>AccCity</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -108,6 +112,10 @@
         <Field Name="InclusionSort">
           <DataField>InclusionSort</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ESP_Primary_Market_or_Application_2017__c">
+          <DataField>ESP_Primary_Market_or_Application_2017__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="AccState">
           <DataField>AccState</DataField>
@@ -117,20 +125,16 @@
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DBA__c">
+          <DataField>DBA__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="AccZip">
           <DataField>AccZip</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Network_Services_Client_Date__c">
-          <DataField>Network_Services_Client_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="AccCounty">
           <DataField>AccCounty</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ESP_Primary_Market_Application_2017__c">
-          <DataField>ESP_Primary_Market_Application_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ContactId">
@@ -149,6 +153,10 @@
           <DataField>Status</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ESP_Client_Date__c">
+          <DataField>ESP_Client_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="ContactPhone">
           <DataField>ContactPhone</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -161,16 +169,16 @@
           <DataField>ContactEmail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Total_Number_of_Employees_OH_Override__c">
+          <DataField>Total_Number_of_Employees_OH_Override__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="ESP_Do_Not_Survey_Reason__c">
           <DataField>ESP_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ODSAClientType">
           <DataField>ODSAClientType</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ESP_Short_Description__c">
-          <DataField>ESP_Short_Description__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Relationship">
@@ -185,6 +193,10 @@
           <DataField>noMWR</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="Total_Number_of_FTEs__c">
+          <DataField>Total_Number_of_FTEs__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="Mocl">
           <DataField>Mocl</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -193,9 +205,21 @@
           <DataField>SpinOffOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Jobs_Production_Total__c">
+          <DataField>Jobs_Production_Total__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Jobs_Research_Total__c">
+          <DataField>Jobs_Research_Total__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="StatusChange">
           <DataField>StatusChange</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Jobs_Other_Total__c">
+          <DataField>Jobs_Other_Total__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="SpunFrom">
           <DataField>SpunFrom</DataField>
@@ -213,13 +237,25 @@
           <DataField>WomanOwned</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Total_Number_of_FTEs_OH__c">
+          <DataField>Total_Number_of_FTEs_OH__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="SpinOffRelatedOrg">
           <DataField>SpinOffRelatedOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Jobs_Production_Ohio__c">
+          <DataField>Jobs_Production_Ohio__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="PortfolioType">
           <DataField>PortfolioType</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Jobs_Research_Ohio__c">
+          <DataField>Jobs_Research_Ohio__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Rural">
           <DataField>Rural</DataField>
@@ -229,13 +265,25 @@
           <DataField>Number_of_Female_Employees__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="Jobs_Other_Ohio_Total__c">
+          <DataField>Jobs_Other_Ohio_Total__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="ReportPeriod">
           <DataField>ReportPeriod</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+        <Field Name="Number_of_Minority_Employees_OH__c">
+          <DataField>Number_of_Minority_Employees_OH__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
         <Field Name="EthnicityGroup">
           <DataField>EthnicityGroup</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Number_of_Female_Employees_OH__c">
+          <DataField>Number_of_Female_Employees_OH__c</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Date_of_First_Contact__c">
           <DataField>Date_of_First_Contact__c</DataField>
@@ -243,7 +291,7 @@
         </Field>
         <Field Name="ESP_PreSeed">
           <DataField>ESP_PreSeed</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="NonUnderservedAll">
           <DataField>NonUnderservedAll</DataField>
@@ -277,10 +325,6 @@
           <DataField>AsianAll</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Client_Engagement_Letter_Signed__c">
-          <DataField>Client_Engagement_Letter_Signed__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="Client_Engagement_Letter_Collaborator__c">
           <DataField>Client_Engagement_Letter_Collaborator__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -301,12 +345,8 @@
           <DataField>TimeSpentForActive</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Start_Date__c">
-          <DataField>ODSA_Stage_Start_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ODSA_Stage_Change_Reason__c">
-          <DataField>ODSA_Stage_Change_Reason__c</DataField>
+        <Field Name="NWOAccID">
+          <DataField>NWOAccID</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="TimeSpentPriorYear">
@@ -321,17 +361,9 @@
           <DataField>ODSA_SF_Account_ID__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Number_of_Employees_in_Ohio__c">
-          <DataField>Number_of_Employees_in_Ohio__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="Inclusion">
           <DataField>Inclusion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Total_Number_of_Employees__c">
-          <DataField>Total_Number_of_Employees__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="OTF_Preseed_Fund">
           <DataField>OTF_Preseed_Fund</DataField>
@@ -344,18 +376,6 @@
         <Field Name="esp_date">
           <DataField>esp_date</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Total_Production_Jobs_f__c">
-          <DataField>Total_Production_Jobs_f__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Total_Research_Jobs_f__c">
-          <DataField>Total_Research_Jobs_f__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Total_Other_Jobs_f__c">
-          <DataField>Total_Other_Jobs_f__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Number_of_Minority_Employees__c">
           <DataField>Number_of_Minority_Employees__c</DataField>
@@ -403,7 +423,7 @@
         </Field>
         <Field Name="JS_PreSeed">
           <DataField>JS PreSeed</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="unsrcsum">
           <DataField>unsrcsum</DataField>
@@ -421,13 +441,21 @@
           <DataField>Total_Number_of_Issued_Patents__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="ESP_Client_Engagement_Letter_Signed__c">
+          <DataField>ESP_Client_Engagement_Letter_Signed__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="Total_Number_of_Patents_Pending__c">
           <DataField>Total_Number_of_Patents_Pending__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="JSAccID">
-          <DataField>JSAccID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="ParamStart">
+          <DataField>ParamStart</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ParamEnd">
+          <DataField>ParamEnd</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -551,7 +579,6 @@
                                 <TextRun>
                                   <Value>Organization Name</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -584,7 +611,6 @@
                                 <TextRun>
                                   <Value>Reporting status</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -619,7 +645,6 @@
                                 <TextRun>
                                   <Value>Active Total</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -654,7 +679,6 @@
                                 <TextRun>
                                   <Value>Active To Inactive </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -689,7 +713,6 @@
                                 <TextRun>
                                   <Value>Inactive To Active</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -724,7 +747,6 @@
                                 <TextRun>
                                   <Value>New Clients</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -757,9 +779,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Network Services Client Date</Value>
+                                  <Value>ESP Client Date</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -794,7 +815,6 @@
                                 <TextRun>
                                   <Value>ESP Tech Focus Area 2017</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -827,7 +847,6 @@
                                 <TextRun>
                                   <Value>Company Status</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -860,7 +879,6 @@
                                 <TextRun>
                                   <Value>ESP Current Operating Stage</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -893,7 +911,6 @@
                                 <TextRun>
                                   <Value>ESP Do Not Survey Reason </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -926,7 +943,6 @@
                                 <TextRun>
                                   <Value>ESP Do Not Survey Date</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -961,7 +977,6 @@
                                 <TextRun>
                                   <Value>Client Type</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -994,7 +1009,6 @@
                                 <TextRun>
                                   <Value>Spin Off Institution</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1027,7 +1041,6 @@
                                 <TextRun>
                                   <Value>Portfolio Type</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1041,6 +1054,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1060,7 +1074,6 @@
                                 <TextRun>
                                   <Value>Minority OCL</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1095,7 +1108,6 @@
                                 <TextRun>
                                   <Value>Woman OCL</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1130,7 +1142,6 @@
                                 <TextRun>
                                   <Value>Rurally Located</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1165,7 +1176,6 @@
                                 <TextRun>
                                   <Value>Ethnicity Group</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1198,7 +1208,6 @@
                                 <TextRun>
                                   <Value>African American</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1233,7 +1242,6 @@
                                 <TextRun>
                                   <Value>Hispanic/</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1247,7 +1255,6 @@
                                 <TextRun>
                                   <Value>Latino </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1282,7 +1289,6 @@
                                 <TextRun>
                                   <Value>American Indian </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1317,7 +1323,6 @@
                                 <TextRun>
                                   <Value>Asian </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1352,7 +1357,6 @@
                                 <TextRun>
                                   <Value>TVSF</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1387,7 +1391,6 @@
                                 <TextRun>
                                   <Value>JS PreSeed</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1403,6 +1406,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1422,7 +1426,6 @@
                                 <TextRun>
                                   <Value>ESP PreSeed</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1436,6 +1439,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1455,7 +1459,6 @@
                                 <TextRun>
                                   <Value>OTF PreSeed Fund</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1471,6 +1474,7 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
+                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1490,7 +1494,6 @@
                                 <TextRun>
                                   <Value>Client Engagement Letter Signed </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1523,7 +1526,6 @@
                                 <TextRun>
                                   <Value>Client Engagement Letter Collaborator </Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1556,7 +1558,6 @@
                                 <TextRun>
                                   <Value>Time Spent Time Period</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1591,7 +1592,6 @@
                                 <TextRun>
                                   <Value>Time Spent Rolling Year</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1626,7 +1626,6 @@
                                 <TextRun>
                                   <Value>Time Spent Prior Year to Current Period</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1856,14 +1855,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Network_Services_Client_Date__c">
+                        <Textbox Name="ESP_Client_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Network_Services_Client_Date__c.Value</Value>
+                                  <Value>=Fields!ESP_Client_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -1874,7 +1873,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Network_Services_Client_Date__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Client_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2516,14 +2515,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Client_Engagement_Letter_Signed__c">
+                        <Textbox Name="ESP_Client_Engagement_Letter_Signed__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Client_Engagement_Letter_Signed__c.Value</Value>
+                                  <Value>=Fields!ESP_Client_Engagement_Letter_Signed__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -2534,7 +2533,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Client_Engagement_Letter_Signed__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Client_Engagement_Letter_Signed__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2948,7 +2947,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Client Services Record Type is equal to NEO OTF ESP</Value>
+                    <Value>The Client Services Record Type is equal to NWO OTF ESP</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2965,7 +2964,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Network Services Client Date is less than or equal to the reporting period End Date.</Value>
+                    <Value>The ESP Client Date is less than or equal to the reporting period End Date.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3164,7 +3163,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>To verify the data in the on the "ODSA ESP Quarterly Report", the following double checks can be completed after exporting this report to Excel.</Value>
+                    <Value>To verify the data in the on the "NWO ODSA ESP Quarterly Report", the following double checks can be completed after exporting this report to Excel.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3250,7 +3249,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>Research Institution Spinouts from page 2 of the "ODSA ESP Quarterly Report".</Value>
+                    <Value>Research Institution Spinouts from page 2 of the "NWO ODSA ESP Quarterly Report".</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3406,7 +3405,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>TVSF Funding from page 2 of the "ODSA ESP Quarterly Report".</Value>
+                    <Value>TVSF Funding from page 2 of the "NWO ODSA ESP Quarterly Report".</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3554,7 +3553,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>Outcome for Became Non-Active from page 2 of the "ODSA ESP Quarterly Report".</Value>
+                    <Value>Outcome for Became Non-Active from page 2 of the "NWO ODSA ESP Quarterly Report".</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3678,7 +3677,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>To verify the Reasons for Became Non-Active from page 2 of the "ODSA ESP Quarterly Report".</Value>
+                    <Value>To verify the Reasons for Became Non-Active from page 2 of the "NWO ODSA ESP Quarterly Report".</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3817,7 +3816,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA ESP Quarterly Report Inclusion Section:</Value>
+                    <Value>NWO ODSA ESP Quarterly Report Inclusion Section:</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Bold</FontWeight>
@@ -4442,7 +4441,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>ODSA ESP Quarterly Report Pre-Seed Section:</Value>
+                    <Value>NWO ODSA ESP Quarterly Report Pre-Seed Section:</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Bold</FontWeight>
@@ -4529,7 +4528,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 09/26/2017</Value>
+                    <Value>Query Last Modified/Reviewed: 01/18/2019</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -4585,7 +4584,7 @@
         <Height>11.24083in</Height>
         <Style />
       </Body>
-      <Width>48.02192in</Width>
+      <Width>45.98025in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
