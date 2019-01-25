@@ -1406,7 +1406,6 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1439,7 +1438,6 @@
                               <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>Yellow</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -2739,7 +2737,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>5.62458in</Top>
+            <Top>8.36416in</Top>
             <Height>0.555in</Height>
             <Width>45.85309in</Width>
             <Style />
@@ -2763,14 +2761,12 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.3675in</Height>
+            <Height>0.375in</Height>
             <Width>45.8531in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox9">
@@ -3005,7 +3001,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> may display the following values, 'Quarterly', 'CDEmpl', 'CRDInv', 'CRDSales', AND/OR ‘InvNoNSCD’</Value>
+                    <Value> may display the following values, 'Quarterly', 'CDEmpl', 'CRDInv', 'CRDSales'</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3020,7 +3016,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Quarterly and InvNoNSCD</Value>
+                    <Value>Quarterly</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Bold</FontWeight>
@@ -4441,62 +4437,6 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>NWO ODSA ESP Quarterly Report Pre-Seed Section:</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>The pre-Seed section numbers are calculated the same as the above inclusion numbers except add the filter of</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> Portfolio Type</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value EvaluationMode="Constant"> = Portfolio Company</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
                     <Value />
                     <Style>
                       <FontWeight>Bold</FontWeight>
@@ -4508,8 +4448,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
             <Top>0.79458in</Top>
-            <Height>4.76056in</Height>
-            <Width>45.8531in</Width>
+            <Left>0.00001in</Left>
+            <Height>7.50014in</Height>
+            <Width>45.85309in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -4528,8 +4469,10 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 01/18/2019</Value>
-                    <Style />
+                    <Value>Query Last Modified/Reviewed: 01/24/2019</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -4538,8 +4481,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.38139in</Top>
-            <Height>0.25in</Height>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
             <Width>45.8531in</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -4548,8 +4491,6 @@
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="textbox15">
