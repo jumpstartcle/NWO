@@ -691,7 +691,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Short Description</Value>
+                                  <Value>ESP Short Description</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -714,6 +714,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1290,7 +1291,7 @@
                 </FilterValues>
               </Filter>
             </Filters>
-            <Top>2.93737in</Top>
+            <Top>2.76in</Top>
             <Height>0.42in</Height>
             <Width>25.66457in</Width>
             <Style />
@@ -1314,14 +1315,12 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Height>0.36973in</Height>
+            <Height>0.375in</Height>
             <Width>25.66457in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox6">
@@ -1332,7 +1331,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>Query Last Modified/Reviewed: 1/24/2019</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1341,8 +1342,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.3975in</Top>
-            <Height>0.1875in</Height>
+            <Top>0.375in</Top>
+            <Height>0.15in</Height>
             <Width>25.66457in</Width>
             <ZIndex>2</ZIndex>
             <Style>
@@ -1351,8 +1352,6 @@
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Textbox9">
@@ -1449,7 +1448,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>1</ListLevel>
                 <Style />
               </Paragraph>
@@ -1486,7 +1484,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>2</ListLevel>
                 <Style />
               </Paragraph>
@@ -1508,7 +1505,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>2</ListLevel>
                 <Style />
               </Paragraph>
@@ -1551,7 +1547,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>2</ListLevel>
                 <Style />
               </Paragraph>
@@ -1564,7 +1559,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>3</ListLevel>
                 <Style />
               </Paragraph>
@@ -1577,7 +1571,6 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>2</ListLevel>
                 <Style />
               </Paragraph>
@@ -1590,13 +1583,12 @@
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
                 <ListLevel>2</ListLevel>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>0.82112in</Top>
+            <Top>0.675in</Top>
             <Height>2.01556in</Height>
             <Width>25.66457in</Width>
             <ZIndex>3</ZIndex>
@@ -1606,8 +1598,6 @@
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="textbox17">
@@ -1618,7 +1608,9 @@
                 <TextRuns>
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style>
@@ -1627,22 +1619,20 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.61278in</Top>
-            <Height>0.16667in</Height>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
             <Width>25.66457in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.59598in</Height>
+        <Height>3.26265in</Height>
         <Style />
       </Body>
-      <Width>32.44792in</Width>
+      <Width>25.8125in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
