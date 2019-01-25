@@ -952,7 +952,7 @@ WHERE   Date_of_First_Contact__c between @Start and @End</CommandText>
           <Value>=Today()</Value>
         </Values>
       </DefaultValue>
-      <Prompt>End</Prompt>
+      <Prompt>Date of First Contact End</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
