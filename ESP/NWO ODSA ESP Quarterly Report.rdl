@@ -493,43 +493,6 @@
         </Filter>
       </Filters>
     </DataSet>
-    <DataSet Name="Progress">
-      <Query>
-        <DataSourceName>NWO</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@startdate">
-            <Value>=Parameters!startdate.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@enddate">
-            <Value>=Parameters!enddate.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ODSAquarterlyProgress</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="totalcount">
-          <DataField>totalcount</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Qgroup">
-          <DataField>Qgroup</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="progcount">
-          <DataField>progcount</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Progress1Quarter">
-          <DataField>Progress1Quarter</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Progress2Quarter">
-          <DataField>Progress2Quarter</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
     <DataSet Name="DealFlow">
       <Query>
         <DataSourceName>NWO</DataSourceName>
@@ -14960,7 +14923,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Queries Last Modified/Reviewed:10/13/2017</Value>
+                      <Value>Queries Last Modified/Reviewed:1/29/2019</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                       </Style>
@@ -14991,7 +14954,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>The report mirrors as closely as possible the official ESP Quarterly Report that is submitted to the State. Save this report for each quarter for future reference and then fill in the report on the official link provided. Please see the footer of this report for more detailed instructions on how some calculations should be performed.</Value>
+                      <Value>The report mirrors as closely as possible the official NWO ESP Quarterly Report that is submitted to the State. Save this report for each quarter for future reference and then fill in the report on the official link provided. Please see the footer of this report for more detailed instructions on how some calculations should be performed.</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>

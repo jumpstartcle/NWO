@@ -2,8 +2,8 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+    <DataSource Name="NWO">
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>63e4a122-2a17-4466-b1c5-ad3a150ca741</rd:DataSourceID>
     </DataSource>
@@ -11,9 +11,9 @@
   <DataSets>
     <DataSet Name="TimePeriod">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspESP_Quarters</CommandText>
+        <CommandText>uspNWO_ESP_Quarters</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -37,7 +37,7 @@
     </DataSet>
     <DataSet Name="Detail">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
@@ -51,7 +51,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspESP_QuarterSemiAnnual</CommandText>
+        <CommandText>uspNWO_ESP_QuarterSemiAnnual</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -131,16 +131,16 @@
           <DataField>ContactEmail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Short_Description__c">
-          <DataField>ESP_Short_Description__c</DataField>
+        <Field Name="Short_Description__c">
+          <DataField>Short_Description__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Tech_Focus_Area_2017__c">
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Primary_Market_Application_2017__c">
-          <DataField>ESP_Primary_Market_Application_2017__c</DataField>
+        <Field Name="ESP_Primary_Market_or_Application_2017__c">
+          <DataField>ESP_Primary_Market_or_Application_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DBA__c">
@@ -159,10 +159,6 @@
           <DataField>Rural</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Start_Date__c">
-          <DataField>ODSA_Stage_Start_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="SpunFrom">
           <DataField>SpunFrom</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -175,9 +171,9 @@
           <DataField>ESP_Current_Operating_Stage__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Change_Reason__c">
-          <DataField>ODSA_Stage_Change_Reason__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="ESP_Client_Date__c">
+          <DataField>ESP_Client_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="period_date">
           <DataField>period_date</DataField>
@@ -206,10 +202,6 @@
         <Field Name="Approximate_Average_Salary__c">
           <DataField>Approximate_Average_Salary__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Network_Services_Client_Date__c">
-          <DataField>Network_Services_Client_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ESP_Do_Not_Survey_Date__c">
           <DataField>ESP_Do_Not_Survey_Date__c</DataField>
@@ -327,6 +319,10 @@
           <DataField>OhioSum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="NWOAccID">
+          <DataField>NWOAccID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="nonohsum">
           <DataField>NonOhSum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -338,10 +334,6 @@
         <Field Name="OTHERsum">
           <DataField>OTHERsum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="JSAccID">
-          <DataField>JSAccID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="IsMetric">
           <DataField>IsMetric</DataField>
@@ -447,17 +439,17 @@
           <DataField>SpinOffOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ESP_Client_Engagement_Letter_Signed__c">
+          <DataField>ESP_Client_Engagement_Letter_Signed__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="SpinOffRelatedOrg">
           <DataField>SpinOffRelatedOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="JS_PreSeed">
           <DataField>JS PreSeed</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Client_Engagement_Letter_Signed__c">
-          <DataField>Client_Engagement_Letter_Signed__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Client_Engagement_Letter_Collaborator__c">
           <DataField>Client_Engagement_Letter_Collaborator__c</DataField>
@@ -571,7 +563,7 @@
                   <Width>1.08334in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.16667in</Width>
+                  <Width>1.31249in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -1046,7 +1038,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox28</rd:DefaultName>
@@ -1686,21 +1680,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="JSAccID">
+                        <Textbox Name="NWOAccID">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!JSAccID.Value</Value>
+                                  <Value>=Fields!NWOAccID.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>JSAccID</rd:DefaultName>
+                          <rd:DefaultName>NWOAccID</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1836,21 +1830,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_Short_Description__c">
+                        <Textbox Name="Short_Description__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Short_Description__c.Value</Value>
+                                  <Value>=Fields!Short_Description__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_Short_Description__c</rd:DefaultName>
+                          <rd:DefaultName>Short_Description__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2057,7 +2051,9 @@
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Relationship</rd:DefaultName>
@@ -2196,14 +2192,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Network_Services_Client_Date__c">
+                        <Textbox Name="ESP_Client_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Network_Services_Client_Date__c.Value</Value>
+                                  <Value>=Fields!ESP_Client_Date__c.Value</Value>
                                   <Style>
                                     <Format>MM/dd/yyyy</Format>
                                   </Style>
@@ -2212,7 +2208,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Network_Services_Client_Date__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Client_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2353,21 +2349,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="ESP_Primary_Market_Application_2017__c">
+                        <Textbox Name="ESP_Primary_Market_or_Application_2017__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ESP_Primary_Market_Application_2017__c.Value</Value>
+                                  <Value>=Fields!ESP_Primary_Market_or_Application_2017__c.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>ESP_Primary_Market_Application_2017__c</rd:DefaultName>
+                          <rd:DefaultName>ESP_Primary_Market_or_Application_2017__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2709,9 +2705,10 @@
                 <Value>=Fields!AccountName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>6in</Top>
+            <Top>5.55903in</Top>
+            <Left>0in</Left>
             <Height>0.67583in</Height>
-            <Width>43.94794in</Width>
+            <Width>44.09376in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2725,7 +2722,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The ODSA ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NEO ESP Network.</Value>
+                    <Value>The NWO ODSA ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NWO ESP Network.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2834,7 +2831,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a 'Network Services Client Date' that is less than or equal to the reporting period End Date. </Value>
+                    <Value>AND a 'ESP Client Date' that is less than or equal to the reporting period End Date. </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2848,7 +2845,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>(To remove any companies whose NSCD is after the reporting period End Date).</Value>
+                    <Value>(To remove any companies whose 'ESP Client Date' is after the reporting period End Date).</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2870,7 +2867,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> - Must have a 'Network Services Client Date' that falls into the quarter being reported.</Value>
+                    <Value> - Must have a 'ESP Client Date' that falls into the quarter being reported.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3084,7 +3081,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a Network Services Client Date' that is less than the reporting period </Value>
+                    <Value>AND a 'ESP Client Date' that is less than the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3114,7 +3111,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>(To remove any companies whose NSCD is after the reporting period End Date).</Value>
+                    <Value>(To remove any companies whose ESP Client Date is after the reporting period End Date).</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3209,7 +3206,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a 'Network Services Client Date' that is less than the reporting period </Value>
+                    <Value>AND a 'ESP Client Date' that is less than the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3344,7 +3341,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>AND a 'Network Services Client Date' that is less than or equal to the reporting period </Value>
+                    <Value>AND a 'ESP Client Date' that is less than or equal to the reporting period </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3390,56 +3387,14 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Any Company that has Investments but does not have a NSCD.</Value>
+                    <Value />
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Bold</FontWeight>
                       <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
-                  <TextRun>
-                    <Value xml:space="preserve"> </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
                 </TextRuns>
-                <ListStyle>Bulleted</ListStyle>
-                <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>These are reported as </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>Pre-Seed Portfolio Company Only </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>in the Relationship column.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <ListLevel>2</ListLevel>
                 <Style>
                   <TextAlign>Left</TextAlign>
                 </Style>
@@ -3463,7 +3418,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
             <Top>0.3in</Top>
-            <Height>5.7in</Height>
+            <Height>5.18958in</Height>
             <Width>43.94794in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -3482,7 +3437,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 1/18/2019</Value>
+                    <Value>Query Last Modified/Reviewed: 1/29/2019</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>
@@ -3554,7 +3509,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ODSA ESP Client List - Active Client Status Update (Tab 2)  </Value>
+                      <Value>NWO ODSA ESP Client List - Active Client Status Update (Tab 2)  </Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>20pt</FontSize>

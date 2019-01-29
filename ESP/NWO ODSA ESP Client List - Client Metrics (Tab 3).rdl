@@ -2,8 +2,8 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="SalesForce">
-      <DataSourceReference>SalesForce-Read</DataSourceReference>
+    <DataSource Name="NWO">
+      <DataSourceReference>NWO-Read</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>63e4a122-2a17-4466-b1c5-ad3a150ca741</rd:DataSourceID>
     </DataSource>
@@ -11,9 +11,9 @@
   <DataSets>
     <DataSet Name="TimePeriod">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspESP_Quarters</CommandText>
+        <CommandText>uspNWO_ESP_Quarters</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -37,7 +37,7 @@
     </DataSet>
     <DataSet Name="Detail">
       <Query>
-        <DataSourceName>SalesForce</DataSourceName>
+        <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@StartDate">
             <Value>=Parameters!StartDate.Value</Value>
@@ -51,7 +51,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspESP_QuarterSemiAnnual</CommandText>
+        <CommandText>uspNWO_ESP_QuarterSemiAnnual</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -131,16 +131,20 @@
           <DataField>ContactEmail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Short_Description__c">
-          <DataField>ESP_Short_Description__c</DataField>
+        <Field Name="Short_Description__c">
+          <DataField>Short_Description__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ESP_Tech_Focus_Area_2017__c">
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ESP_Primary_Market_Application_2017__c">
-          <DataField>ESP_Primary_Market_Application_2017__c</DataField>
+        <Field Name="ESP_Primary_Market_or_Application_2017__c">
+          <DataField>ESP_Primary_Market_or_Application_2017__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DBA__c">
+          <DataField>DBA__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MinorityOwned">
@@ -151,16 +155,8 @@
           <DataField>WomanOwned</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ODSA_Stage_Start_Date__c">
-          <DataField>ODSA_Stage_Start_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="Rural">
           <DataField>Rural</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ODSA_Stage_Change_Reason__c">
-          <DataField>ODSA_Stage_Change_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SpunFrom">
@@ -174,6 +170,10 @@
         <Field Name="ESP_Current_Operating_Stage__c">
           <DataField>ESP_Current_Operating_Stage__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ESP_Client_Date__c">
+          <DataField>ESP_Client_Date__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="period_date">
           <DataField>period_date</DataField>
@@ -238,10 +238,6 @@
         <Field Name="Total_Number_of_Open_Positions__c">
           <DataField>Total_Number_of_Open_Positions__c</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Network_Services_Client_Date__c">
-          <DataField>Network_Services_Client_Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="Total_Number_of_FTEs_OH__c">
           <DataField>Total_Number_of_FTEs_OH__c</DataField>
@@ -323,6 +319,10 @@
           <DataField>OhioSum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="NWOAccID">
+          <DataField>NWOAccID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="nonohsum">
           <DataField>NonOhSum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -334,10 +334,6 @@
         <Field Name="OTHERsum">
           <DataField>OTHERsum</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="JSAccID">
-          <DataField>JSAccID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ODSA_SF_Account_ID__c">
           <DataField>ODSA_SF_Account_ID__c</DataField>
@@ -447,13 +443,13 @@
           <DataField>SpinOffRelatedOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ESP_Client_Engagement_Letter_Signed__c">
+          <DataField>ESP_Client_Engagement_Letter_Signed__c</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="JS_PreSeed">
           <DataField>JS PreSeed</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Client_Engagement_Letter_Signed__c">
-          <DataField>Client_Engagement_Letter_Signed__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Client_Engagement_Letter_Collaborator__c">
           <DataField>Client_Engagement_Letter_Collaborator__c</DataField>
@@ -475,9 +471,17 @@
           <DataField>Inclusion</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ParamStart">
+          <DataField>ParamStart</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="OTF_Preseed_Fund">
           <DataField>OTF_Preseed_Fund</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParamEnd">
+          <DataField>ParamEnd</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <Filters>
@@ -1792,21 +1796,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="JSAccID">
+                        <Textbox Name="NWOAccID">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!JSAccID.Value</Value>
+                                  <Value>=Fields!NWOAccID.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>JSAccID</rd:DefaultName>
+                          <rd:DefaultName>NWOAccID</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2900,9 +2904,9 @@
                 <Value>=Fields!AccountName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.6in</Top>
+            <Top>2.425in</Top>
             <Height>0.67583in</Height>
-            <Width>51.3125in</Width>
+            <Width>51.31252in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2916,7 +2920,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The ODSA ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NEO ESP Network.</Value>
+                    <Value>The NWO ODSA ESP Semi-Annual Report reports bi-annual survey data from companies who are clients of the NEO ESP Network.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2974,7 +2978,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The 'Network Services Client Date' that is less than or equal to the column </Value>
+                    <Value>The 'ESP Client Date' that is less than or equal to the column </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3007,7 +3011,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Companies that have metrics (completed a survey) and have a Network Services Client Date that is greater than column </Value>
+                    <Value>Companies that have metrics (completed a survey) and have a ESP Client Date that is greater than column </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3127,7 +3131,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.3in</Top>
-            <Height>2.3in</Height>
+            <Height>2.10208in</Height>
             <Width>51.3125in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -3199,7 +3203,7 @@
         <Height>3.38292in</Height>
         <Style />
       </Body>
-      <Width>52.72918in</Width>
+      <Width>51.40626in</Width>
       <Page>
         <PageHeader>
           <Height>0.625in</Height>
@@ -3213,7 +3217,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>ODSA ESP Client List - Client Metrics (Tab 3) - </Value>
+                      <Value>NWO ODSA ESP Client List - Client Metrics (Tab 3) - </Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>20pt</FontSize>
