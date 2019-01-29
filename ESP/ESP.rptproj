@@ -61,6 +61,7 @@
     <Report Include="NWO ESP Quarterly Report QDF Detail.rdl" />
     <Report Include="NWO ESP Quarterly Report Referral Data Detail.rdl" />
     <Report Include="NWO ESP Quarterly Semi-Annual Report Client Detail.rdl" />
+    <Report Include="NWO ODSA ESP Quarterly Report.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
