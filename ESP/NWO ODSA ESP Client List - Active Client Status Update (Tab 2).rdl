@@ -486,7 +486,7 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IIF(Fields!ActiveToInactiveAll.Value = 1 OR Fields!ActiveTotal.Value = 1 OR Fields!NewClients.Value = 1 OR Fields!RptSource.Value = "InvNoNSCD", true, false)</FilterExpression>
+          <FilterExpression>=IIF(Fields!ActiveToInactiveAll.Value = 1 OR Fields!ActiveTotal.Value = 1 OR Fields!NewClients.Value = 1, true, false)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>

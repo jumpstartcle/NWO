@@ -3149,7 +3149,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 01/18/2019</Value>
+                    <Value>Query Last Modified/Reviewed: 01/24/2019</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -3217,18 +3217,21 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>NWO ODSA ESP Client List - Client Metrics (Tab 3) - </Value>
+                      <Value>NWO ODSA ESP Quarterly &amp; Semi-Annual Report - Client Metrics (Tab 3)</Value>
                       <Style>
+                        <FontStyle>Normal</FontStyle>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>20pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <TextDecoration>None</TextDecoration>
+                        <Color>#000000</Color>
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value>Do Not run prior to 2018</Value>
+                      <Value> - Do Not run prior to 2018</Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
-                        <FontSize>16pt</FontSize>
+                        <FontSize>20pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
