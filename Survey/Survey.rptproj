@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO PrelimSurveyList.rdl" />
+    <Report Include="NWO Summary Outcome Metrics for Selected Companies.rdl" />
     <Report Include="NWO SurveyResponseRates.rdl" />
     <Report Include="NWO UncompletedSurveys - Tabs.rdl" />
     <Report Include="NWO UncompletedSurveys.rdl" />

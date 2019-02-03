@@ -191,10 +191,6 @@
           <DataField>Relationship</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Total_Number_of_Employees_OH_Override__c">
-          <DataField>Total_Number_of_Employees_OH_Override__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="Date_of_First_Contact__c">
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
