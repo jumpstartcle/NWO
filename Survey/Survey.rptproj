@@ -52,6 +52,9 @@
     <DataSource Include="NWO-Read.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="NWO Detail Outcome Metrics For Selected Companies.rdl" />
+    <Report Include="NWO ESP Survey - ClientSatisfaction.rdl" />
+    <Report Include="NWO ESP Survey - ClientSatisfaction_byPartner.rdl" />
     <Report Include="NWO PrelimSurveyList.rdl" />
     <Report Include="NWO Summary Outcome Metrics for Selected Companies.rdl" />
     <Report Include="NWO SurveyResponseRates.rdl" />
