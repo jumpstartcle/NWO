@@ -1611,7 +1611,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="NWO ESP Client Satisfaction from the " &amp; Parameters!SurveyDate.Label &amp; " Survey"</Value>
+                    <Value>="NWO ESP Survey Client Satisfaction for All Partners from the " &amp; Parameters!SurveyDate.Label &amp; " Survey"</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
