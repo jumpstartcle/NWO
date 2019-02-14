@@ -15006,7 +15006,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>10/1/2018 12:00:00 AM</Value>
+          <Value>10/01/2018 00:00:00</Value>
         </Values>
       </DefaultValue>
       <Prompt>Select Quarter</Prompt>
@@ -15059,6 +15059,10 @@
           <ParameterValue>
             <Value>10/01/2018 00:00:00</Value>
             <Label>2018 Q4</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>01/01/2019 00:00:00</Value>
+            <Label>2019 Q1</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
@@ -15121,6 +15125,10 @@
           <ParameterValue>
             <Value>12/31/2018 00:00:00</Value>
             <Label>2018-Q4</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>03/31/2019 00:00:00</Value>
+            <Label>2019-Q1</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
