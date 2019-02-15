@@ -64,6 +64,7 @@
     <Report Include="NWO Organizations with Multiple Client Services Records.rdl" />
     <Report Include="NWO Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="NWO Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
+    <Report Include="NWO Time Records Logged After the ESP Do Not Survey Date.rdl" />
     <Report Include="NWO Time Records Logged Before the Date of First Contact.rdl" />
     <Report Include="NWO Time Records NonNetwork Contact Record.rdl" />
   </ItemGroup>
