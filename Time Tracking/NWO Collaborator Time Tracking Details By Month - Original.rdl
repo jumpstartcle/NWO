@@ -14,10 +14,10 @@
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@Staff">
-            <Value>=IIF(Parameters!Staff.Value = "ALL", Nothing,Parameters!Staff.Value)</Value>
+            <Value>=Parameters!Staff.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@StartDate">
-            <Value>=Parameters!StartDate.Value</Value>
+            <Value>=Parameters!MonYYYY.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!EndDate.Value</Value>
@@ -202,44 +202,6 @@ ORDER BY monthone DESC</CommandText>
           <DataField>IsActive</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PartnerID">
-          <DataField>PartnerID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PartnerName">
-          <DataField>PartnerName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Filters>
-        <Filter>
-          <FilterExpression>=Fields!PartnerID.Value</FilterExpression>
-          <Operator>Equal</Operator>
-          <FilterValues>
-            <FilterValue>=IIF(Parameters!NetworkPartner.Value = "ALL", Fields!PartnerID.Value,Parameters!NetworkPartner.Value)</FilterValue>
-          </FilterValues>
-        </Filter>
-      </Filters>
-    </DataSet>
-    <DataSet Name="NetworkPartner">
-      <Query>
-        <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT 'ALL' as ID, 'ALL' as Name
-UNION
-SELECT        Id, Name
-FROM            vwNWO_NetworkPartners
-WHERE Name NOT LIKE 'JumpStart%'
-ORDER BY Name</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="Id">
-          <DataField>ID</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -370,6 +332,25 @@ ORDER BY Name</CommandText>
                   <TextAlign>Left</TextAlign>
                 </Style>
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.675in</Top>
@@ -394,10 +375,10 @@ ORDER BY Name</CommandText>
                   <Width>1.72098in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.11639in</Width>
+                  <Width>0.99139in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.65803in</Width>
+                  <Width>2.78305in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>5.32348in</Width>
@@ -1232,16 +1213,16 @@ ORDER BY Name</CommandText>
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox3">
+                      <Textbox Name="Textbox52">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>Staff</Value>
+                                <Value>Activity Date</Value>
                                 <Style>
                                   <FontWeight>Bold</FontWeight>
                                 </Style>
@@ -1252,7 +1233,7 @@ ORDER BY Name</CommandText>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox3</rd:DefaultName>
+                        <rd:DefaultName>Textbox52</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -1267,46 +1248,7 @@ ORDER BY Name</CommandText>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>
-                    <TablixMember>
-                      <TablixHeader>
-                        <Size>1.64764in</Size>
-                        <CellContents>
-                          <Textbox Name="Textbox52">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value>Activity Date</Value>
-                                    <Style>
-                                      <FontWeight>Bold</FontWeight>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style>
-                                  <TextAlign>Center</TextAlign>
-                                </Style>
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Textbox52</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>LightGrey</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember />
-                      </TablixMembers>
-                    </TablixMember>
+                    <TablixMember />
                   </TablixMembers>
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
@@ -1322,17 +1264,19 @@ ORDER BY Name</CommandText>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
-                      <Textbox Name="contactname">
+                      <Textbox Name="Date__c">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!contactname.Value</Value>
-                                <Style />
+                                <Value>=Format(Fields!Date__c.Value, "dddd, MM/dd/yyyy")</Value>
+                                <Style>
+                                  <Format>D</Format>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style>
@@ -1340,7 +1284,7 @@ ORDER BY Name</CommandText>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>contactname</rd:DefaultName>
+                        <rd:DefaultName>Date__c</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -1356,83 +1300,41 @@ ORDER BY Name</CommandText>
                   </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <TablixHeader>
-                        <Size>1.64764in</Size>
-                        <CellContents>
-                          <Textbox Name="Date__c">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value>=Format(Fields!Date__c.Value, "dddd, MM/dd/yyyy")</Value>
-                                    <Style>
-                                      <Format>D</Format>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style>
-                                  <TextAlign>Center</TextAlign>
-                                </Style>
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Date__c</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>LightGrey</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>true</Hidden>
-                          </Visibility>
-                          <KeepWithGroup>After</KeepWithGroup>
-                        </TablixMember>
-                        <TablixMember>
-                          <Group Name="Details" />
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!contactname.Value</Value>
-                            </SortExpression>
-                            <SortExpression>
-                              <Value>=Fields!Date__c.Value</Value>
-                            </SortExpression>
-                            <SortExpression>
-                              <Value>=Fields!CSname.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
-                        </TablixMember>
-                        <TablixMember>
-                          <Group Name="Date__c1">
-                            <GroupExpressions>
-                              <GroupExpression>=Fields!Date__c.Value</GroupExpression>
-                            </GroupExpressions>
-                          </Group>
-                          <SortExpressions>
-                            <SortExpression>
-                              <Value>=Fields!Date__c.Value</Value>
-                            </SortExpression>
-                          </SortExpressions>
-                        </TablixMember>
-                      </TablixMembers>
+                      <Visibility>
+                        <Hidden>true</Hidden>
+                      </Visibility>
+                      <KeepWithGroup>After</KeepWithGroup>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="Details" />
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!Date__c.Value</Value>
+                        </SortExpression>
+                        <SortExpression>
+                          <Value>=Fields!CSname.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                    </TablixMember>
+                    <TablixMember>
+                      <Group Name="Date__c1">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!Date__c.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!Date__c.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>1in</Size>
+                    <Size>1.64764in</Size>
                     <CellContents>
-                      <Textbox Name="Textbox9">
+                      <Textbox Name="Textbox54">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
@@ -1450,7 +1352,7 @@ ORDER BY Name</CommandText>
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Textbox9</rd:DefaultName>
+                        <rd:DefaultName>Textbox54</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -1465,46 +1367,7 @@ ORDER BY Name</CommandText>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>
-                    <TablixMember>
-                      <TablixHeader>
-                        <Size>1.64764in</Size>
-                        <CellContents>
-                          <Textbox Name="Textbox54">
-                            <CanGrow>true</CanGrow>
-                            <KeepTogether>true</KeepTogether>
-                            <Paragraphs>
-                              <Paragraph>
-                                <TextRuns>
-                                  <TextRun>
-                                    <Value />
-                                    <Style>
-                                      <FontWeight>Bold</FontWeight>
-                                    </Style>
-                                  </TextRun>
-                                </TextRuns>
-                                <Style>
-                                  <TextAlign>Center</TextAlign>
-                                </Style>
-                              </Paragraph>
-                            </Paragraphs>
-                            <rd:DefaultName>Textbox54</rd:DefaultName>
-                            <Style>
-                              <Border>
-                                <Color>LightGrey</Color>
-                                <Style>Solid</Style>
-                              </Border>
-                              <PaddingLeft>2pt</PaddingLeft>
-                              <PaddingRight>2pt</PaddingRight>
-                              <PaddingTop>2pt</PaddingTop>
-                              <PaddingBottom>2pt</PaddingBottom>
-                            </Style>
-                          </Textbox>
-                        </CellContents>
-                      </TablixHeader>
-                      <TablixMembers>
-                        <TablixMember />
-                      </TablixMembers>
-                    </TablixMember>
+                    <TablixMember />
                   </TablixMembers>
                   <KeepWithGroup>Before</KeepWithGroup>
                 </TablixMember>
@@ -1513,7 +1376,7 @@ ORDER BY Name</CommandText>
             <DataSetName>TimeRecords</DataSetName>
             <Top>1.225in</Top>
             <Height>1.25471in</Height>
-            <Width>16.16667in</Width>
+            <Width>15.16669in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -1522,10 +1385,10 @@ ORDER BY Name</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.63541in</Height>
+        <Height>2.57291in</Height>
         <Style />
       </Body>
-      <Width>16.48961in</Width>
+      <Width>15.26042in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>
@@ -1538,22 +1401,20 @@ ORDER BY Name</CommandText>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="StartDate">
-      <DataType>DateTime</DataType>
-      <Prompt>Start Date</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="EndDate">
-      <DataType>DateTime</DataType>
-      <Prompt>End Date</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="NetworkPartner">
+    <ReportParameter Name="MonYYYY">
       <DataType>String</DataType>
-      <Prompt>Select Network Partner</Prompt>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>MonthList</DataSetName>
+          <ValueField>monthone</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Mon-YYYY (e.g. Nov-2018)</Prompt>
       <ValidValues>
         <DataSetReference>
-          <DataSetName>NetworkPartner</DataSetName>
-          <ValueField>Id</ValueField>
-          <LabelField>Name</LabelField>
+          <DataSetName>MonthList</DataSetName>
+          <ValueField>monthone</ValueField>
+          <LabelField>monthyear</LabelField>
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
@@ -1580,6 +1441,7 @@ ORDER BY Name</CommandText>
     </ReportParameter>
     <ReportParameter Name="Staff">
       <DataType>String</DataType>
+      <Nullable>true</Nullable>
       <Prompt>Staff</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -1588,6 +1450,15 @@ ORDER BY Name</CommandText>
           <LabelField>Name</LabelField>
         </DataSetReference>
       </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="EndDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=dateadd("d", -1, dateAdd("m", 1, Parameters!MonYYYY.Value))</Value>
+        </Values>
+      </DefaultValue>
+      <Hidden>true</Hidden>
     </ReportParameter>
     <ReportParameter Name="TimeOff">
       <DataType>String</DataType>
@@ -1602,38 +1473,33 @@ ORDER BY Name</CommandText>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>5</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>StartDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>2</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>NetworkPartner</ParameterName>
+          <ParameterName>MonYYYY</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>TimeOff</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>EndDate</ParameterName>
-        </CellDefinition>
-        <CellDefinition>
-          <ColumnIndex>3</ColumnIndex>
           <RowIndex>0</RowIndex>
           <ParameterName>Active</ParameterName>
         </CellDefinition>
         <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
           <ParameterName>Staff</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>EndDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>4</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>TimeOff</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
