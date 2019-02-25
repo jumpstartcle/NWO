@@ -834,7 +834,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1662,22 +1661,13 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!AccountName.Value</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>AccountName</rd:DefaultName>
-                          <ActionInfo>
-                            <Actions>
-                              <Action>
-                                <Hyperlink>=Fields!URLlink.Value</Hyperlink>
-                              </Action>
-                            </Actions>
-                          </ActionInfo>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -2737,7 +2727,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>8.51in</Top>
+            <Top>8.23764in</Top>
             <Height>0.555in</Height>
             <Width>45.85309in</Width>
             <Style />
@@ -2749,7 +2739,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>NWO ESP Quarterly/Semi-Annual Report Client Detail</Value>
+                    <Value>NWO ESP Quarterly &amp; Semi-Annual Report Client Detail</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -2761,6 +2751,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
+            <Left>0.00001in</Left>
             <Height>0.375in</Height>
             <Width>45.8531in</Width>
             <ZIndex>1</ZIndex>
@@ -2808,7 +2799,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>NWO ESP Quarterly Report</Value>
+                    <Value>NWO ODSA ESP Quarterly Report</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2844,7 +2835,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>NWO ESP Client List - Active Client Status Update (Tab 2)</Value>
+                    <Value>NWO ODSA ESP Quarterly &amp; Semi-Annual Report - Client List</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -2880,7 +2871,7 @@
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>NWO ESP Semi-Annual Report - Client Metrics (Tab 3</Value>
+                    <Value>NWO ODSA ESP Semi-Annual Report - Client Metrics</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -3075,68 +3066,6 @@
                 </TextRuns>
                 <ListStyle>Bulleted</ListStyle>
                 <ListLevel>1</ListLevel>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value />
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>The </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>Organization Name </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>includes a</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value xml:space="preserve"> </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>hyperlink to the Organization’s Client Services record.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
                 <Style>
                   <TextAlign>Left</TextAlign>
                 </Style>
@@ -4447,10 +4376,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>0.79458in</Top>
-            <Left>0.00001in</Left>
-            <Height>7.64597in</Height>
-            <Width>45.85309in</Width>
+            <Top>0.675in</Top>
+            <Height>7.56264in</Height>
+            <Width>45.8531in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -4482,6 +4410,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
             <Top>0.375in</Top>
+            <Left>0.00001in</Left>
             <Height>0.15in</Height>
             <Width>45.8531in</Width>
             <ZIndex>3</ZIndex>
@@ -4512,8 +4441,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.57236in</Top>
-            <Height>0.20833in</Height>
+            <Top>0.525in</Top>
+            <Height>0.15in</Height>
             <Width>45.8531in</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -4524,10 +4453,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>11.24083in</Height>
+        <Height>9.02208in</Height>
         <Style />
       </Body>
-      <Width>45.98025in</Width>
+      <Width>45.98026in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
