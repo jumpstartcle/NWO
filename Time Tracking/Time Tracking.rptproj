@@ -54,7 +54,7 @@
   <ItemGroup>
     <Report Include="NWO All Employee Time Detail with CSR-Subject-Comments.rdl" />
     <Report Include="NWO Collaborator Time Tracking Details By Month.rdl" />
-    <Report Include="NWO Employee Time Summary - Month End Allocation.rdl" />
+    <Report Include="NWO Employee Time Summary - Month End Allocation Original.rdl" />
     <Report Include="NWO Timesheet.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
