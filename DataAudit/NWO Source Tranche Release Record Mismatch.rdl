@@ -549,7 +549,7 @@
             <Value>=Fields!Actual_Disbursement_Date__c.Value</Value>
           </SortExpression>
         </SortExpressions>
-        <Top>2.24444in</Top>
+        <Top>2.175in</Top>
         <Height>0.5in</Height>
         <Width>13.58542in</Width>
         <Style />
@@ -642,7 +642,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox2</rd:DefaultName>
-        <Top>0.71667in</Top>
+        <Top>0.675in</Top>
         <Height>1.5in</Height>
         <Width>13.58542in</Width>
         <ZIndex>1</ZIndex>
@@ -697,7 +697,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>0.575in</Top>
+        <Top>0.525in</Top>
         <Height>0.15in</Height>
         <Width>13.58542in</Width>
         <ZIndex>3</ZIndex>

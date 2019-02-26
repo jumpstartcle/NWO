@@ -160,7 +160,6 @@
                                 <TextRun>
                                   <Value>Date of First Contact</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -194,7 +193,6 @@
                                 <TextRun>
                                   <Value>Date (Of Time Tracking Record)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -228,7 +226,6 @@
                                 <TextRun>
                                   <Value>Time Spent</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -262,7 +259,6 @@
                                 <TextRun>
                                   <Value>Time Record Type Name</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -294,7 +290,6 @@
                                 <TextRun>
                                   <Value>Lead Advisor</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -326,7 +321,6 @@
                                 <TextRun>
                                   <Value>Person (Who Spent Time)</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -358,7 +352,6 @@
                                 <TextRun>
                                   <Value>Person's Organization</Value>
                                   <Style>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -377,6 +370,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -685,7 +679,7 @@
             <DataSetName>TimeRecords</DataSetName>
             <Top>1.825in</Top>
             <Height>0.5in</Height>
-            <Width>14.90004in</Width>
+            <Width>14.9in</Width>
             <Style />
           </Tablix>
           <Textbox Name="Textbox1">
