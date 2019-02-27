@@ -827,7 +827,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>TimeRecords</DataSetName>
-            <Top>1.50528in</Top>
+            <Top>1.43583in</Top>
             <Height>0.5in</Height>
             <Width>17.4873in</Width>
             <Style />
@@ -992,10 +992,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.11111in</Height>
+        <Height>2.03819in</Height>
         <Style />
       </Body>
-      <Width>17.57063in</Width>
+      <Width>17.5498in</Width>
       <Page>
         <PageHeight>8.5in</PageHeight>
         <PageWidth>11in</PageWidth>

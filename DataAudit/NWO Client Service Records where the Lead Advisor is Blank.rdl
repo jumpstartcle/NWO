@@ -76,8 +76,6 @@
                                 <TextRun>
                                   <Value>Client Services Name</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -110,8 +108,6 @@
                                 <TextRun>
                                   <Value>Client Service Record Created By </Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -144,8 +140,6 @@
                                 <TextRun>
                                   <Value>Lead Advisor Name</Value>
                                   <Style>
-                                    <FontFamily>Tahoma</FontFamily>
-                                    <FontSize>11pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -165,6 +159,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -312,7 +307,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.51528in</Top>
+            <Top>1.44584in</Top>
             <Height>0.46125in</Height>
             <Width>10.39584in</Width>
             <Style />
@@ -363,7 +358,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>0.525in</Top>
+            <Top>0.51111in</Top>
             <Height>0.15in</Height>
             <Width>10.39584in</Width>
             <ZIndex>2</ZIndex>
@@ -479,7 +474,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.09847in</Height>
+        <Height>2.02555in</Height>
         <Style />
       </Body>
       <Width>10.52084in</Width>

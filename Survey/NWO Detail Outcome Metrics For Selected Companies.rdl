@@ -501,6 +501,7 @@ order by EndDate desc
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -4376,7 +4377,7 @@ order by EndDate desc
                 <Value>=Fields!OrganizationName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.25486in</Top>
+            <Top>2.18542in</Top>
             <Height>0.5in</Height>
             <Width>76.85769in</Width>
             <Style>
@@ -4667,7 +4668,7 @@ order by EndDate desc
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.93592in</Height>
+        <Height>2.77967in</Height>
         <Style />
       </Body>
       <Width>76.92084in</Width>

@@ -2904,7 +2904,7 @@
                 <Value>=Fields!AccountName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.425in</Top>
+            <Top>2.40208in</Top>
             <Height>0.67583in</Height>
             <Width>51.31252in</Width>
             <Style>
@@ -3132,7 +3132,7 @@
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.3in</Top>
             <Height>2.10208in</Height>
-            <Width>51.3125in</Width>
+            <Width>51.31252in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -3161,7 +3161,7 @@
             <rd:DefaultName>Textbox6</rd:DefaultName>
             <Top>0.15in</Top>
             <Height>0.15in</Height>
-            <Width>51.3125in</Width>
+            <Width>51.31252in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -3189,7 +3189,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
             <Height>0.15in</Height>
-            <Width>51.3125in</Width>
+            <Width>51.31252in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -3217,7 +3217,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>NWO ODSA ESP Quarterly &amp; Semi-Annual Report - Client Metrics (Tab 3)</Value>
+                      <Value>NWO ODSA ESP Semi-Annual Report - Client Metrics</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Tahoma</FontFamily>
@@ -3228,7 +3228,7 @@
                       </Style>
                     </TextRun>
                     <TextRun>
-                      <Value> - Do Not run prior to 2018</Value>
+                      <Value> (Do Not run prior to 2018)</Value>
                       <Style>
                         <FontFamily>Tahoma</FontFamily>
                         <FontSize>20pt</FontSize>
@@ -3270,7 +3270,7 @@
               <rd:DefaultName>Textbox8</rd:DefaultName>
               <Top>0.375in</Top>
               <Height>0.25in</Height>
-              <Width>51.3125in</Width>
+              <Width>51.31252in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

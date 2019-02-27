@@ -36,8 +36,6 @@
                             <TextRun>
                               <Value>Organization ID</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -69,8 +67,6 @@
                             <TextRun>
                               <Value>Organization Name</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -103,8 +99,6 @@
                             <TextRun>
                               <Value>Client Service  ID</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -136,8 +130,6 @@
                             <TextRun>
                               <Value>Client Services Record Name</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -170,8 +162,6 @@
                             <TextRun>
                               <Value>Date of First Contact</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>12pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -489,8 +479,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>MultipleCSR</DataSetName>
-        <Top>2.17153in</Top>
-        <Left>0in</Left>
+        <Top>2.10208in</Top>
         <Height>0.75in</Height>
         <Width>12.27083in</Width>
         <Style />
@@ -590,7 +579,6 @@
         </Paragraphs>
         <rd:DefaultName>textbox13</rd:DefaultName>
         <Top>0.675in</Top>
-        <Left>0in</Left>
         <Height>1.42708in</Height>
         <Width>12.27083in</Width>
         <ZIndex>1</ZIndex>
@@ -618,7 +606,6 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>textbox1</rd:DefaultName>
-        <Left>0in</Left>
         <Height>0.375in</Height>
         <Width>12.27083in</Width>
         <ZIndex>2</ZIndex>
@@ -646,8 +633,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>0.575in</Top>
-        <Left>0in</Left>
+        <Top>0.525in</Top>
         <Height>0.15in</Height>
         <Width>12.27083in</Width>
         <ZIndex>3</ZIndex>
@@ -679,7 +665,6 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>0.375in</Top>
-        <Left>0in</Left>
         <Height>0.15in</Height>
         <Width>12.27083in</Width>
         <ZIndex>4</ZIndex>
@@ -692,10 +677,10 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.03125in</Height>
+    <Height>2.96875in</Height>
     <Style />
   </Body>
-  <Width>12.27083in</Width>
+  <Width>12.48958in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
