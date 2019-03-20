@@ -163,7 +163,7 @@ ORDER BY monthone DESC</CommandText>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -398,9 +398,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!OrganizationName.Value</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -433,9 +431,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!EmployeeNumber.Value</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -468,9 +464,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!ContactName.Value</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -501,9 +495,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!PreInvest.Value)</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -536,9 +528,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!PostSeedInvest.Value)</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -571,9 +561,7 @@ ORDER BY monthone DESC</CommandText>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Sum(Fields!PostSeedPlusInvest.Value)</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                  <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -607,7 +595,6 @@ ORDER BY monthone DESC</CommandText>
                                 <TextRun>
                                   <Value>=Sum(Fields!ESPOther.Value)</Value>
                                   <Style>
-                                    <FontWeight>Bold</FontWeight>
                                     <Format>f2</Format>
                                   </Style>
                                 </TextRun>
@@ -630,6 +617,7 @@ ORDER BY monthone DESC</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -1264,7 +1252,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Time Tracking Program Code is included in the NWO ESP Time Tracking.</Value>
+                    <Value>The Time Tracking Record Type includes the phrase "ESP Time".</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
