@@ -1286,14 +1286,14 @@
             <DataSetName>DataSet1</DataSetName>
             <Filters>
               <Filter>
-                <FilterExpression>=Fields!Date_of_First_Contact__c.Value</FilterExpression>
+                <FilterExpression>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</FilterExpression>
                 <Operator>GreaterThanOrEqual</Operator>
                 <FilterValues>
                   <FilterValue>=Parameters!startdate.Value</FilterValue>
                 </FilterValues>
               </Filter>
               <Filter>
-                <FilterExpression>=Fields!Date_of_First_Contact__c.Value</FilterExpression>
+                <FilterExpression>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</FilterExpression>
                 <Operator>LessThanOrEqual</Operator>
                 <FilterValues>
                   <FilterValue>=Parameters!enddate.Value</FilterValue>
@@ -1384,7 +1384,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Date of First Contact is within the Time Period selected in the report parameters.</Value>
+                    <Value>The Date of First Contact is equal to or greater than 1/1/2017 and less than or equal to the report parameter End Date.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1401,7 +1401,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>And the Qualified Deal Flow Date is not Blank</Value>
+                    <Value>And the Qualified Deal Flow Date is not Blank and less than or equal to the report parameter End Date</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1659,7 +1659,7 @@
           <Value>10/01/2018 00:00:00</Value>
         </Values>
       </DefaultValue>
-      <Prompt>Start date</Prompt>
+      <Prompt>QDF Start date</Prompt>
     </ReportParameter>
     <ReportParameter Name="enddate">
       <DataType>DateTime</DataType>
@@ -1668,7 +1668,7 @@
           <Value>12/31/2018 00:00:00</Value>
         </Values>
       </DefaultValue>
-      <Prompt>End date</Prompt>
+      <Prompt>QDF End date</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
