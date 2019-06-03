@@ -60,6 +60,7 @@
     <Report Include="NWO Non-ESP Time Records Audit.rdl" />
     <Report Include="NWO Organizations Ethnicity Minority Fields Audit.rdl" />
     <Report Include="NWO Organizations that are Classified as Ohio Third Frontier (OTF) PreSeed Funds.rdl" />
+    <Report Include="NWO Organizations that are Not ESP QDF and Not Non-Tech QDF.rdl" />
     <Report Include="NWO Organizations that are Not QDF.rdl" />
     <Report Include="NWO Organizations with Multiple Client Services Records.rdl" />
     <Report Include="NWO Organizations with Multiple Point in Time Records for the Same Date.rdl" />
