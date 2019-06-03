@@ -1101,11 +1101,11 @@ If you find any duplicate Client Services Records during your review, please bri
   </ReportSections>
   <ReportParameters>
     <ReportParameter Name="Start">
-      <DataType>String</DataType>
+      <DataType>DateTime</DataType>
       <Prompt>Start</Prompt>
     </ReportParameter>
     <ReportParameter Name="End">
-      <DataType>String</DataType>
+      <DataType>DateTime</DataType>
       <Prompt>End</Prompt>
     </ReportParameter>
   </ReportParameters>
