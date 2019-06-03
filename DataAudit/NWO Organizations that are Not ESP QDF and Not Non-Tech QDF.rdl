@@ -62,6 +62,10 @@
           <DataField>LeadAdvisorName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="LeadAdvisorAccountName">
+          <DataField>LeadAdvisorAccountName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Date_of_First_Contact__c">
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -173,7 +177,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>14.93962in</Width>
+            <Width>15.93962in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -199,6 +203,9 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>3.08333in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -533,6 +540,41 @@
                               <Style>Solid</Style>
                             </BottomBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Lead Advisor Account Name</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -899,6 +941,40 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="LeadAdvisorAccountName">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!LeadAdvisorAccountName.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>LeadAdvisorAccountName</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Short_Description__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -948,6 +1024,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -972,9 +1049,8 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>1.07028in</Top>
-            <Left>0in</Left>
             <Height>0.43in</Height>
-            <Width>14.93962in</Width>
+            <Width>15.93962in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -999,7 +1075,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>14.93962in</Width>
+            <Width>15.93962in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1029,9 +1105,8 @@
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.525in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
-            <Width>14.93962in</Width>
+            <Width>15.93962in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1076,9 +1151,8 @@ If you find any duplicate Client Services Records during your review, please bri
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.675in</Top>
-            <Left>0in</Left>
             <Height>0.30903in</Height>
-            <Width>14.93962in</Width>
+            <Width>15.93962in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1089,7 +1163,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>1.65653in</Height>
         <Style />
       </Body>
-      <Width>14.93962in</Width>
+      <Width>15.93962in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
