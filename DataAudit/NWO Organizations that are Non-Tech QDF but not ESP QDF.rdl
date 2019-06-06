@@ -1221,11 +1221,11 @@ If you find any duplicate Client Services Records during your review, please bri
   <ReportParameters>
     <ReportParameter Name="Start">
       <DataType>DateTime</DataType>
-      <Prompt>Start</Prompt>
+      <Prompt>Date of First Contact Start</Prompt>
     </ReportParameter>
     <ReportParameter Name="End">
       <DataType>DateTime</DataType>
-      <Prompt>End</Prompt>
+      <Prompt>Date of First Contact End</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
