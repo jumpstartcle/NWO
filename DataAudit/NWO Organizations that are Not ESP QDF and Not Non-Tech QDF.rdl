@@ -70,8 +70,8 @@
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Non_Tech_Client_Date__c">
-          <DataField>Non_Tech_Client_Date__c</DataField>
+        <Field Name="Non_Tech_Qualified_Deal_Flow_Date__c">
+          <DataField>Non_Tech_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ESP_Qualified_Deal_Flow_Date__c">
@@ -196,7 +196,7 @@
                   <Width>1.44792in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.41667in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.9375in</Width>
@@ -334,14 +334,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox5">
+                        <Textbox Name="Textbox5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Client Date</Value>
+                                  <Value>Non Tech Qualified Deal Flow Date c</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -351,7 +351,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox5</rd:DefaultName>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -359,7 +359,6 @@
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
-                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -731,14 +730,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Non_Tech_Client_Date__c">
+                        <Textbox Name="Non_Tech_Qualified_Deal_Flow_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Non_Tech_Client_Date__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -747,7 +746,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Non_Tech_Client_Date__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -755,7 +754,6 @@
                             <BottomBorder>
                               <Style>Solid</Style>
                             </BottomBorder>
-                            <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1055,7 +1053,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.07028in</Top>
             <Height>0.43in</Height>
-            <Width>15.93962in</Width>
+            <Width>16.35629in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -1145,6 +1143,7 @@ You can click on the Client Services Name in this report and it will take you to
 If you find any duplicate Client Services Records during your review, please bring them to the attention of IT).</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
@@ -1168,7 +1167,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>1.65653in</Height>
         <Style />
       </Body>
-      <Width>15.93962in</Width>
+      <Width>16.35629in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1181,11 +1180,11 @@ If you find any duplicate Client Services Records during your review, please bri
   <ReportParameters>
     <ReportParameter Name="Start">
       <DataType>DateTime</DataType>
-      <Prompt>Start</Prompt>
+      <Prompt>Date of First Contact Start</Prompt>
     </ReportParameter>
     <ReportParameter Name="End">
       <DataType>DateTime</DataType>
-      <Prompt>End</Prompt>
+      <Prompt>Date of First Contact End</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

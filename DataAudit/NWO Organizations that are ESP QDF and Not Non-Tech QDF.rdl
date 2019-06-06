@@ -1451,6 +1451,7 @@ You can click on the Client Services Name in this report and it will take you to
 If you find any duplicate Client Services Records during your review, please bring them to the attention of IT.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>

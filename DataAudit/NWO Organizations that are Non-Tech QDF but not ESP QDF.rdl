@@ -70,8 +70,8 @@
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Non_Tech_Client_Date__c">
-          <DataField>Non_Tech_Client_Date__c</DataField>
+        <Field Name="Non_Tech_Qualified_Deal_Flow_Date__c">
+          <DataField>Non_Tech_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ESP_Qualified_Deal_Flow_Date__c">
@@ -357,14 +357,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox15">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Client Date</Value>
+                                  <Value>Non Tech Qualified Deal Flow Date</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -375,7 +375,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -767,14 +767,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Non_Tech_Client_Date__c">
+                        <Textbox Name="Non_Tech_Qualified_Deal_Flow_Date__c">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Non_Tech_Client_Date__c.Value</Value>
+                                  <Value>=Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value</Value>
                                   <Style>
                                     <FontFamily />
                                   </Style>
@@ -783,7 +783,7 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Non_Tech_Client_Date__c</rd:DefaultName>
+                          <rd:DefaultName>Non_Tech_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1184,6 +1184,7 @@ You can click on the Client Services Name in this report and it will take you to
 If you find any duplicate Client Services Records during your review, please bring them to the attention of IT.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
                       <Color>#000000</Color>
