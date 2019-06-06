@@ -151,6 +151,22 @@
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Client_Date__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">false</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -676,7 +692,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1078,7 +1093,6 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.98403in</Top>
-            <Left>0in</Left>
             <Height>0.43in</Height>
             <Width>15.93962in</Width>
             <ZIndex>1</ZIndex>
@@ -1104,7 +1118,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.375in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>15.93962in</Width>
             <ZIndex>2</ZIndex>
@@ -1136,7 +1149,6 @@
             </Paragraphs>
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.525in</Top>
-            <Left>0in</Left>
             <Height>0.15in</Height>
             <Width>15.93962in</Width>
             <ZIndex>3</ZIndex>
@@ -1183,7 +1195,6 @@ If you find any duplicate Client Services Records during your review, please bri
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.675in</Top>
-            <Left>0in</Left>
             <Height>0.30903in</Height>
             <Width>15.93962in</Width>
             <ZIndex>4</ZIndex>
