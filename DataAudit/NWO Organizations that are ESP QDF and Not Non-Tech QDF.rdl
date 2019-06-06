@@ -70,8 +70,8 @@
           <DataField>Date_of_First_Contact__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="Non_Tech_Client_Date__c">
-          <DataField>Non_Tech_Client_Date__c</DataField>
+        <Field Name="Non_Tech_Qualified_Deal_Flow_Date__c">
+          <DataField>Non_Tech_Qualified_Deal_Flow_Date__c</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ESP_Qualified_Deal_Flow_Date__c">
@@ -153,7 +153,7 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!Non_Tech_Client_Date__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>

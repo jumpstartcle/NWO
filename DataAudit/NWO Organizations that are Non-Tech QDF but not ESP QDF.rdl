@@ -142,6 +142,10 @@
           <DataField>Not_ESP_QDF_Reviewed_by__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Not_Non_Tech_QDF_Reviewed_by__c">
+          <DataField>Not_Non_Tech_QDF_Reviewed_by__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="RecordTypeId">
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -153,14 +157,21 @@
       </Fields>
       <Filters>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!Non_Tech_Client_Date__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">false</FilterValue>
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Not_Non_Tech_QDF_Reviewed_by__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
@@ -1208,7 +1219,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>2.53708in</Height>
         <Style />
       </Body>
-      <Width>15.93962in</Width>
+      <Width>16.93962in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
