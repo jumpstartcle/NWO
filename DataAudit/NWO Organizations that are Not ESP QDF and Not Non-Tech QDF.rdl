@@ -142,6 +142,10 @@
           <DataField>Not_ESP_QDF_Reviewed_by__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Not_Non_Tech_QDF_Reviewed_by__c">
+          <DataField>Not_Non_Tech_QDF_Reviewed_by__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="RecordTypeId">
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -161,6 +165,20 @@
         </Filter>
         <Filter>
           <FilterExpression>=IsNothing(Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Not_ESP_QDF_Reviewed_by__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Not_Non_Tech_QDF_Reviewed_by__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>
@@ -193,7 +211,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>15.93962in</Width>
+            <Width>21.35629in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -212,6 +230,9 @@
                   <Width>1.44792in</Width>
                 </TablixColumn>
                 <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
                   <Width>1.41667in</Width>
                 </TablixColumn>
                 <TablixColumn>
@@ -219,6 +240,18 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>3.08333in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -350,6 +383,41 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ESP Qualified Deal Flow Date</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -392,7 +460,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP NOT QDF Reason</Value>
+                                  <Value>NOT ESP QDF Reason</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -493,6 +561,146 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Street</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox25">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>City</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>State</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox27">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Zip</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="textbox9">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -572,7 +780,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Lead Advisor Account Name</Value>
+                                  <Value>Advisor Organization</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -658,13 +866,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CS_Name</rd:DefaultName>
-                          <ActionInfo>
-                            <Actions>
-                              <Action>
-                                <Hyperlink>'https://jumpstart.my.salesforce.com' + _=Fields!CSRID.Value</Hyperlink>
-                              </Action>
-                            </Actions>
-                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -676,6 +877,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -740,6 +942,40 @@
                               <Style>Solid</Style>
                             </BottomBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ESP_Qualified_Deal_Flow_Date__c">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ESP_Qualified_Deal_Flow_Date__c.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -879,6 +1115,142 @@
                               <Style>Solid</Style>
                             </BottomBorder>
                             <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Street">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Street.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Street</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="City">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!City.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>City</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="State">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!State.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>State</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Zip">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Zip.Value</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Zip</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1043,6 +1415,11 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1073,7 +1450,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.07028in</Top>
             <Height>0.43in</Height>
-            <Width>16.35629in</Width>
+            <Width>21.35629in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -1098,7 +1475,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>15.93962in</Width>
+            <Width>21.35629in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1129,7 +1506,7 @@
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>15.93962in</Width>
+            <Width>21.35629in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1146,37 +1523,63 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>This report displays the Organizations that are neither ESP QDF NOR Non-Tech QDF in Salesforce for the Time Period (Quarter) that needs reviewed. 
-The goal is that any Companies that are eligible for ESP or Non-Tech are marked as such prior to Quarterly Reporting on these two programs is Completed. 
+                    <Value>This report displays the Organizations that are neither ESP QDF NOR Non-Tech QDF in Salesforce for the Time Period (Quarter) that needs reviewed. 
+The goal is that any Companies that are eligible for ESP QDF or Non-Tech QDF are marked as such prior to Quarterly Reporting on these two programs is Completed. 
 
-Data selection includes Organizations where;
-The "Date of First Contact" is between the Date of First Contact Start Date and Date of First Contact End Date in the Report Parameters above.
-And the "ESP Qualified Deal Flow Date" is Blank.
-And the "Non-Tech Qualified Deal Flow Date" is Blank.
-And the "Not ESP QDF, Reviewed By" is Blank.
-And the "Client Services Created By" is a JumpStart Employee.
-
-Work Instructions:
-Please add or adjust any needed data in Salesforce to designate a Company as Qualified Deal Flow (QDF) and/or Non-Tech if appropriate.
-If the Company is not eligible for ESP, Fill in the field "Not ESP QDF, Reviewed By".
-You can click on the Client Services Name in this report and it will take you to the record in Salesforce.
-If you find any duplicate Client Services Records during your review, please bring them to the attention of IT).</Value>
+</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Arial</FontFamily>
                       <FontWeight>Normal</FontWeight>
                       <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:
+</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Please add or adjust any needed data in Salesforce to designate a Company as ESP QDF and/or Non-Tech QDF if appropriate.
+If the Company is not eligible for ESP QDF, fill in the field "Not ESP QDF, Reviewed By".</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
                     </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>If the Company is not eligible for Non-Tech QDF, fill in the filed "Not Non-Tech QDF, Reviewed By".
+You can click on the Client Services Name in this report and it will take you to the record in Salesforce.
+If you find any duplicate Client Services Records during your review, please bring them to the attention of IT.</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.675in</Top>
             <Height>0.30903in</Height>
-            <Width>15.93962in</Width>
+            <Width>21.35629in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1187,7 +1590,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>1.65653in</Height>
         <Style />
       </Body>
-      <Width>16.35629in</Width>
+      <Width>21.35629in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
