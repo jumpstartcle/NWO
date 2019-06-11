@@ -151,6 +151,22 @@
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
+      <Filters>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!ESP_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Non_Tech_Qualified_Deal_Flow_Date__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
     </DataSet>
   </DataSets>
   <ReportSections>
@@ -642,13 +658,17 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CS_Name</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>'https://jumpstart.my.salesforce.com' + _=Fields!CSRID.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
