@@ -318,7 +318,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Created By</Value>
+                                  <Value>Client Services Record Created By
+</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -425,7 +426,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Qualified Deal Flow Date</Value>
+                                  <Value>Non Tech Qualified Deal Flow</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -496,7 +497,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Problem the product or service solves</Value>
+                                  <Value>Problem the Product/Service Solves
+</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -1454,7 +1456,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.07028in</Top>
+            <Top>2.28611in</Top>
             <Height>0.43in</Height>
             <Width>21.35629in</Width>
             <ZIndex>1</ZIndex>
@@ -1584,7 +1586,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.675in</Top>
-            <Height>0.30903in</Height>
+            <Height>1.59722in</Height>
             <Width>21.35629in</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -1593,7 +1595,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>1.65653in</Height>
+        <Height>2.71903in</Height>
         <Style />
       </Body>
       <Width>21.35629in</Width>
