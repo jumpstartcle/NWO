@@ -425,7 +425,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Qualified Deal Flow Date c</Value>
+                                  <Value>Non Tech Qualified Deal Flow Date</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -866,6 +866,13 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CS_Name</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>="https://nwo.my.salesforce.com/" &amp; Fields!CSRID.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -877,7 +884,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
