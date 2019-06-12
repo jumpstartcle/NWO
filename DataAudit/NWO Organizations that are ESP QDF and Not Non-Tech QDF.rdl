@@ -142,6 +142,10 @@
           <DataField>Not_ESP_QDF_Reviewed_by__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Not_Non_Tech_QDF_Reviewed_by__c">
+          <DataField>Not_Non_Tech_QDF_Reviewed_by__c</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="RecordTypeId">
           <DataField>RecordTypeId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -164,6 +168,13 @@
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">false</FilterValue>
+          </FilterValues>
+        </Filter>
+        <Filter>
+          <FilterExpression>=IsNothing(Fields!Not_Non_Tech_QDF_Reviewed_by__c.Value)</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Boolean">true</FilterValue>
           </FilterValues>
         </Filter>
       </Filters>
@@ -300,7 +311,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Created By Name</Value>
+                                  <Value>Client Services Record Created By
+</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -408,7 +420,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP NOT QDF Reason</Value>
+                                  <Value>NOT ESP QDF Reason
+</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -444,7 +457,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Problem the product  or service solves</Value>
+                                  <Value>Problem the Product/Service Solves
+</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -732,7 +746,8 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Lead Advisor Organization</Value>
+                                  <Value>Advisor Organization
+</Value>
                                   <Style>
                                     <FontFamily />
                                     <FontSize>11pt</FontSize>
@@ -819,13 +834,17 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CS_Name</rd:DefaultName>
+                          <ActionInfo>
+                            <Actions>
+                              <Action>
+                                <Hyperlink>="https://nwo.my.salesforce.com/" &amp; Fields!CSRID.Value</Hyperlink>
+                              </Action>
+                            </Actions>
+                          </ActionInfo>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BottomBorder>
-                              <Style>Solid</Style>
-                            </BottomBorder>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1360,7 +1379,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>1.05292in</Top>
+            <Top>2.4757in</Top>
             <Height>0.43in</Height>
             <Width>15.93962in</Width>
             <ZIndex>1</ZIndex>
@@ -1436,17 +1455,14 @@
                 <TextRuns>
                   <TextRun>
                     <Value>This report displays the Organizations that are ESP QDF but NOT Non-Tech QDF in Salesforce for the Time Period (Quarter) that needs reviewed. 
-The goal is that any Companies that are eligible for Non-Tech are marked as such prior to Quarterly Reporting on this program is Completed.
+The goal is that any Companies that are eligible for Non-Tech QDF are marked as such prior to Quarterly Reporting on this program is Completed.
 
-Data selection includes Organizations where; 
-The "Date of First Contact" is between the Date of First Contact Start Date and Date of First Contact End Date in the Report Parameters above.
-And the "ESP Qualified Deal Flow Date" is NOT Blank.
-And the "Non-Tech Qualified Deal Flow Date" is Blank.
-And the "Not ESP QDF, Reviewed By" is Blank.
-And the "Client Services Created By" is a JumpStart Employee.
+
 
 Work Instructions:
-Please add or adjust any needed data in Salesforce to designate a Company as Non-Tech if appropriate.
+Please add or adjust any needed data in Salesforce to designate a Company as Non-Tech QDF if appropriate.
+
+If the Company is not eligible for Non-Tech QDF, fill in the filed "Not Non-Tech QDF, Reviewed By".
 You can click on the Client Services Name in this report and it will take you to the record in Salesforce.
 If you find any duplicate Client Services Records during your review, please bring them to the attention of IT.</Value>
                     <Style>
@@ -1463,7 +1479,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.625in</Top>
-            <Height>0.30903in</Height>
+            <Height>1.8507in</Height>
             <Width>15.93962in</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -1472,7 +1488,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.15167in</Height>
+        <Height>2.9057in</Height>
         <Style />
       </Body>
       <Width>15.93962in</Width>
