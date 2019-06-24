@@ -208,8 +208,6 @@
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Tablix Name="table1">
@@ -826,7 +824,7 @@
                                 <TextRun>
                                   <Value>=Fields!CS_Name.Value</Value>
                                   <Style>
-                                    <FontFamily />
+                                    <FontFamily>Arial</FontFamily>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1379,7 +1377,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>2.4757in</Top>
+            <Top>2.00695in</Top>
             <Height>0.43in</Height>
             <Width>15.93962in</Width>
             <ZIndex>1</ZIndex>
@@ -1394,6 +1392,7 @@
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1425,6 +1424,7 @@
                   <TextRun>
                     <Value>Queries Last Modified/Reviewed:6/3/2019</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1457,11 +1457,28 @@
                     <Value>This report displays the Organizations that are ESP QDF but NOT Non-Tech QDF in Salesforce for the Time Period (Quarter) that needs reviewed. 
 The goal is that any Companies that are eligible for Non-Tech QDF are marked as such prior to Quarterly Reporting on this program is Completed.
 
-
-
-Work Instructions:
+</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>
 Please add or adjust any needed data in Salesforce to designate a Company as Non-Tech QDF if appropriate.
-
 If the Company is not eligible for Non-Tech QDF, fill in the filed "Not Non-Tech QDF, Reviewed By".
 You can click on the Client Services Name in this report and it will take you to the record in Salesforce.
 If you find any duplicate Client Services Records during your review, please bring them to the attention of IT.</Value>
@@ -1479,7 +1496,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.625in</Top>
-            <Height>1.8507in</Height>
+            <Height>1.38195in</Height>
             <Width>15.93962in</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -1488,7 +1505,7 @@ If you find any duplicate Client Services Records during your review, please bri
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.9057in</Height>
+        <Height>2.43695in</Height>
         <Style />
       </Body>
       <Width>15.93962in</Width>

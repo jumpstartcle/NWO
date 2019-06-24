@@ -208,8 +208,6 @@
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Tablix Name="table1">
@@ -855,7 +853,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1415,6 +1412,7 @@
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1446,6 +1444,7 @@
                   <TextRun>
                     <Value>Queries Last Modified/Reviewed:6/3/2019</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1478,7 +1477,27 @@
                     <Value>This report displays the Organizations that are Non-Tech QDF but NOT ESP QDF in Salesforce for the Time Period (Quarter) that needs reviewed.
 The goal is that any Companies that are eligible for ESP QDF are marked as such prior to Quarterly Reporting on this program is Completed.
 
-Work Instructions:
+</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>Work Instructions:</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontFamily>Arial</FontFamily>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>Underline</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>
 Please add or adjust any needed data in Salesforce to designate a Company as ESP QDF if appropriate.
 If the Company is not eligible for ESP QDF, fill in the field "Not ESP QDF, Reviewed By".
 You can click on the Client Services Name in this report and it will take you to the record in Salesforce.
@@ -1496,7 +1515,7 @@ If you find any duplicate Client Services Records during your review, please bri
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox4</rd:DefaultName>
-            <Top>0.675in</Top>
+            <Top>0.66111in</Top>
             <Height>1.36264in</Height>
             <Width>19.93962in</Width>
             <ZIndex>4</ZIndex>

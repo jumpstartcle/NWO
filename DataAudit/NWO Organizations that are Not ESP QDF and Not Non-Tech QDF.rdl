@@ -886,7 +886,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1472,6 +1471,7 @@
                   <TextRun>
                     <Value>="Report Run on " &amp; Globals!ExecutionTime</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
@@ -1503,6 +1503,7 @@
                   <TextRun>
                     <Value>Queries Last Modified/Reviewed:6/3/2019</Value>
                     <Style>
+                      <FontFamily>Arial</FontFamily>
                       <FontSize>9pt</FontSize>
                     </Style>
                   </TextRun>
