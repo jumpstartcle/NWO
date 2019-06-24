@@ -171,7 +171,7 @@
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=IsNothing(Fields!ESP_NOT_QDF_Reason__c.Value)</FilterExpression>
+          <FilterExpression>=IsNothing(Fields!Not_ESP_QDF_Reviewed_by__c.Value)</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue DataType="Boolean">true</FilterValue>

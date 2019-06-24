@@ -295,6 +295,7 @@
                           <rd:DefaultName>textbox2</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -332,6 +333,7 @@
                           <rd:DefaultName>textbox3</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -368,6 +370,7 @@
                           <rd:DefaultName>textbox4</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -404,6 +407,7 @@
                           <rd:DefaultName>Textbox14</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -439,6 +443,7 @@
                           <rd:DefaultName>Textbox5</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -474,6 +479,7 @@
                           <rd:DefaultName>textbox6</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -511,6 +517,7 @@
                           <rd:DefaultName>textbox7</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -547,6 +554,7 @@
                           <rd:DefaultName>textbox8</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -583,6 +591,7 @@
                           <rd:DefaultName>Textbox22</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -618,6 +627,7 @@
                           <rd:DefaultName>Textbox25</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -653,6 +663,7 @@
                           <rd:DefaultName>Textbox19</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -688,6 +699,7 @@
                           <rd:DefaultName>Textbox27</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -723,6 +735,7 @@
                           <rd:DefaultName>textbox9</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -759,6 +772,7 @@
                           <rd:DefaultName>textbox10</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -795,6 +809,7 @@
                           <rd:DefaultName>Textbox13</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -830,6 +845,7 @@
                           <rd:DefaultName>textbox11</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -877,6 +893,7 @@
                           </ActionInfo>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <FontFamily />
@@ -909,6 +926,7 @@
                           <rd:DefaultName>CreatedByName</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -944,6 +962,7 @@
                           <rd:DefaultName>Date_of_First_Contact__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -979,6 +998,7 @@
                           <rd:DefaultName>ESP_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1013,6 +1033,7 @@
                           <rd:DefaultName>Non_Tech_Qualified_Deal_Flow_Date__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1047,6 +1068,7 @@
                           <rd:DefaultName>ESP_NOT_QDF_Reason__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1082,6 +1104,7 @@
                           <rd:DefaultName>Problem_the_product_service_Solves__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1117,6 +1140,7 @@
                           <rd:DefaultName>County__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1152,6 +1176,7 @@
                           <rd:DefaultName>Street</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1186,6 +1211,7 @@
                           <rd:DefaultName>City</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1220,6 +1246,7 @@
                           <rd:DefaultName>State</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1254,6 +1281,7 @@
                           <rd:DefaultName>Zip</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1288,6 +1316,7 @@
                           <rd:DefaultName>ESP_Tech_Focus_Area_2017__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1323,6 +1352,7 @@
                           <rd:DefaultName>LeadAdvisorName</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1358,6 +1388,7 @@
                           <rd:DefaultName>LeadAdvisorAccountName</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
@@ -1392,6 +1423,7 @@
                           <rd:DefaultName>Short_Description__c</rd:DefaultName>
                           <Style>
                             <Border>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                             <BottomBorder>
