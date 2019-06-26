@@ -54,6 +54,10 @@ order by EndDate desc
           <DataField>ESP Survey</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Non_Tech_Survey">
+          <DataField>Non Tech Survey</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="OrganizationId">
           <DataField>OrganizationId</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -306,6 +310,9 @@ order by EndDate desc
                   <Width>1.00031in</Width>
                 </TablixColumn>
                 <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
                   <Width>1.00031in</Width>
                 </TablixColumn>
                 <TablixColumn>
@@ -501,7 +508,40 @@ order by EndDate desc
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Non Tech Survey</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2372,6 +2412,41 @@ order by EndDate desc
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>ESP_Survey</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>None</Style>
+                            </TopBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Non_Tech_Survey">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Non_Tech_Survey.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Non_Tech_Survey</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -4342,6 +4417,7 @@ order by EndDate desc
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -4379,7 +4455,7 @@ order by EndDate desc
             </SortExpressions>
             <Top>2.18542in</Top>
             <Height>0.5in</Height>
-            <Width>76.85769in</Width>
+            <Width>77.85769in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4671,7 +4747,7 @@ order by EndDate desc
         <Height>2.77967in</Height>
         <Style />
       </Body>
-      <Width>76.92084in</Width>
+      <Width>77.85769in</Width>
       <Page>
         <PageWidth>17in</PageWidth>
         <LeftMargin>0.25in</LeftMargin>
@@ -4734,6 +4810,10 @@ order by EndDate desc
           <ParameterValue>
             <Value>ESP Survey</Value>
             <Label>ESP Survey</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Non Tech Survey</Value>
+            <Label>Non Tech Survey</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>

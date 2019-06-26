@@ -2204,16 +2204,8 @@ and rc.dt &lt;  (SELECT  MAX(c.Employment_Data_As_Of__c) from vwNWO_Company_Repo
             <Label>ESP Survey</Label>
           </ParameterValue>
           <ParameterValue>
-            <Value>BGC Survey</Value>
-            <Label>BGC Survey</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>Core City Survey</Value>
-            <Label>Core City Survey</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>Growth Services Survey</Value>
-            <Label>Growth Services Survey</Label>
+            <Value>Non Tech Survey</Value>
+            <Label>Non Tech Survey</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>

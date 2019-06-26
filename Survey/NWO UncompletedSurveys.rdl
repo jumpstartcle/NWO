@@ -1064,6 +1064,10 @@
             <Value>ESP Survey</Value>
             <Label>ESP Survey</Label>
           </ParameterValue>
+          <ParameterValue>
+            <Value>Non Tech Survey</Value>
+            <Label>Non Tech Survey</Label>
+          </ParameterValue>
         </ParameterValues>
       </ValidValues>
     </ReportParameter>

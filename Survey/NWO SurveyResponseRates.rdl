@@ -1879,7 +1879,6 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Top>0in</Top>
             <Height>0.375in</Height>
             <Width>12in</Width>
             <ZIndex>4</ZIndex>
@@ -1944,6 +1943,10 @@ FROM            Company_Reporting_Survey__c AS crs</CommandText>
           <ParameterValue>
             <Value>Growth Services</Value>
             <Label>Growth Services</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Non Tech Survey</Value>
+            <Label>Non Tech Survey</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>

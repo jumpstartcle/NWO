@@ -831,7 +831,7 @@
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.24653in</Height>
+        <Height>0.54167in</Height>
         <Style />
       </Body>
       <Width>17.32574in</Width>
@@ -1099,6 +1099,10 @@
           <ParameterValue>
             <Value>ESP Survey</Value>
             <Label>ESP Survey</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>Non Tech Survey</Value>
+            <Label>Non Tech Survey</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
