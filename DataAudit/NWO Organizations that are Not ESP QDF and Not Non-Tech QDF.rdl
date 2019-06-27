@@ -211,7 +211,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>21.35629in</Width>
+            <Width>29.5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -221,25 +221,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.72917in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.35417in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.44792in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.41667in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.9375in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>3.08333in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -251,22 +236,37 @@
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.38753in</Width>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>5in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -365,7 +365,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>textbox4</rd:DefaultName>
@@ -400,7 +402,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox14</rd:DefaultName>
@@ -426,7 +430,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Qualified Deal Flow</Value>
+                                  <Value>Non Tech Qualified Deal Flow Date</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -434,7 +438,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -1484,7 +1490,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>2.28611in</Top>
             <Height>0.43in</Height>
-            <Width>21.35629in</Width>
+            <Width>29.5in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -1510,7 +1516,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>21.35629in</Width>
+            <Width>29.5in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1542,7 +1548,7 @@
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>21.35629in</Width>
+            <Width>29.5in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1615,7 +1621,7 @@ If you find any duplicate Client Services Records during your review, please bri
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.675in</Top>
             <Height>1.59722in</Height>
-            <Width>21.35629in</Width>
+            <Width>29.5in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1626,7 +1632,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>2.71903in</Height>
         <Style />
       </Body>
-      <Width>21.35629in</Width>
+      <Width>29.5in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

@@ -204,7 +204,7 @@
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>19.93962in</Width>
+            <Width>28.5in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -214,22 +214,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.78125in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.46875in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.58333in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.63542in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.65625in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>2in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
@@ -238,25 +226,37 @@
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.81462in</Width>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>5in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -355,7 +355,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -381,7 +383,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Tech Qualified Deal Flow</Value>
+                                  <Value>Non Tech Qualified Deal Flow Date</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -389,7 +391,9 @@
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox6</rd:DefaultName>
@@ -1395,7 +1399,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>2.03764in</Top>
             <Height>0.43in</Height>
-            <Width>19.93962in</Width>
+            <Width>28.5in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -1421,7 +1425,7 @@
             <rd:DefaultName>Textbox21</rd:DefaultName>
             <Top>0.375in</Top>
             <Height>0.15in</Height>
-            <Width>19.93962in</Width>
+            <Width>28.5in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1453,7 +1457,7 @@
             <rd:DefaultName>Textbox23</rd:DefaultName>
             <Top>0.525in</Top>
             <Height>0.15in</Height>
-            <Width>19.93962in</Width>
+            <Width>28.5in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1513,7 +1517,7 @@ If you find any duplicate Client Services Records during your review, please bri
             <rd:DefaultName>textbox4</rd:DefaultName>
             <Top>0.66111in</Top>
             <Height>1.36264in</Height>
-            <Width>19.93962in</Width>
+            <Width>28.5in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -1524,7 +1528,7 @@ If you find any duplicate Client Services Records during your review, please bri
         <Height>2.47458in</Height>
         <Style />
       </Body>
-      <Width>19.93962in</Width>
+      <Width>28.5in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
