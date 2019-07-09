@@ -18,7 +18,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspSurveyResponseRates</CommandText>
+        <CommandText>uspNWO_SurveyResponseRates</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
