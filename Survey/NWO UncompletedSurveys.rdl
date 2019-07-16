@@ -83,10 +83,6 @@
           <DataField>Qualtrics_Survey_Link__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Survey_Reason__c">
-          <DataField>Survey_Reason__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="SenderOrg">
