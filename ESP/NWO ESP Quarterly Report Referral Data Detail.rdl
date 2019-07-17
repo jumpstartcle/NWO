@@ -867,7 +867,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>01/01/2018 00:00:00</Value>
+          <Value>03/31/2019 00:00:00</Value>
         </Values>
       </DefaultValue>
       <Prompt>Start date</Prompt>
@@ -876,7 +876,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>12/31/2018 00:00:00</Value>
+          <Value>06/30/2019 00:00:00</Value>
         </Values>
       </DefaultValue>
       <Prompt>End date</Prompt>

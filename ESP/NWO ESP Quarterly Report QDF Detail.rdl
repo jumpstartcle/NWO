@@ -1656,7 +1656,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>10/01/2018 00:00:00</Value>
+          <Value>01/01/2017 00:00:00</Value>
         </Values>
       </DefaultValue>
       <Prompt>QDF Start date</Prompt>
@@ -1665,7 +1665,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>12/31/2018 00:00:00</Value>
+          <Value>06/30/2019 00:00:00</Value>
         </Values>
       </DefaultValue>
       <Prompt>QDF End date</Prompt>
