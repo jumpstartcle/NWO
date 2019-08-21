@@ -1325,7 +1325,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>NWO ESP Pre/ Post Seed/ Post Seed+ Monthly Time Report</Value>
+                    <Value>NWO ESP Collaborator Pre/ Post Seed/ Post Seed+ Monthly Time Report</Value>
                     <Style>
                       <FontFamily>Tahoma</FontFamily>
                       <FontSize>20pt</FontSize>
@@ -1356,24 +1356,6 @@ ORDER BY monthone DESC</CommandText>
                 <TextRuns>
                   <TextRun>
                     <Value>Displays Total </Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value>JumpStart Staff</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Bold</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                  <TextRun>
-                    <Value> and </Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
