@@ -50,6 +50,8 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="NWO-Read.rds" />
+    <DataSource Include="NWO_SF_Vault-Shared.rds" />
+    <DataSource Include="SF_NWODev-Shared.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO Deal Flow Meeting PrePost Report.rdl" />

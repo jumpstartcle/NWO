@@ -2,8 +2,8 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>7ce5f24c-a298-4273-848a-c69f23b14626</rd:DataSourceID>
     </DataSource>
@@ -11,17 +11,17 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>NWO</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@MonYYYY">
-            <Value>=Parameters!MonYYYY.Value</Value>
+          <QueryParameter Name="@StartDate">
+            <Value>=Parameters!pramStartDate.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@EndDate">
-            <Value>=Parameters!EndDate.Value</Value>
+            <Value>=Parameters!pramEndDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESP_PrePostSeedPlus</CommandText>
+        <CommandText>SSRS.uspNWO_ESP_PrePostSeedPlus</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -96,24 +96,6 @@
         <Field Name="EmployeeNumber">
           <DataField>EmployeeNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DateParam">
-      <Query>
-        <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT        monthyear, monthone
-FROM            vwNWO_CALmonthyear13
-ORDER BY monthone DESC</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="monthyear">
-          <DataField>monthyear</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="monthone">
-          <DataField>monthone</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1313,7 +1295,7 @@ ORDER BY monthone DESC</CommandText>
                 <Value>=Fields!ContactName.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>2.43098in</Top>
+            <Top>2.68445in</Top>
             <Height>1.2182in</Height>
             <Width>12.20708in</Width>
             <Style />
@@ -1373,7 +1355,7 @@ ORDER BY monthone DESC</CommandText>
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value> time for the Month selected in the report parameter where:</Value>
+                    <Value> time for the dates selected in the report parameters where:</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1504,7 +1486,7 @@ ORDER BY monthone DESC</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox25</rd:DefaultName>
-            <Top>0.94236in</Top>
+            <Top>1.19583in</Top>
             <Height>1.48862in</Height>
             <Width>12.20708in</Width>
             <ZIndex>2</ZIndex>
@@ -1535,7 +1517,7 @@ ORDER BY monthone DESC</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox34</rd:DefaultName>
-            <Top>0.64236in</Top>
+            <Top>0.89583in</Top>
             <Height>0.15in</Height>
             <Width>12.20708in</Width>
             <ZIndex>3</ZIndex>
@@ -1554,7 +1536,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 8/21/2019</Value>
+                    <Value>Query Last Modified/Reviewed: 1/16/2020</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>
@@ -1566,7 +1548,7 @@ ORDER BY monthone DESC</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox34</rd:DefaultName>
-            <Top>0.79236in</Top>
+            <Top>1.04583in</Top>
             <Height>0.15in</Height>
             <Width>12.20708in</Width>
             <ZIndex>4</ZIndex>
@@ -1585,7 +1567,7 @@ ORDER BY monthone DESC</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Format(CDate(Parameters!MonYYYY.Value), "MMMM yyyy")</Value>
+                    <Value>=Format(Parameters!pramStartDate.Value, "MMMM d, yyyy") &amp; " - " &amp; Format(Parameters!pramEndDate.Value,"MMMM d, yyyy")</Value>
                     <Style>
                       <FontSize>14pt</FontSize>
                       <FontWeight>Bold</FontWeight>
@@ -1596,7 +1578,7 @@ ORDER BY monthone DESC</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox1</rd:DefaultName>
-            <Top>0.40278in</Top>
+            <Top>0.65625in</Top>
             <Height>0.23958in</Height>
             <Width>12.20708in</Width>
             <ZIndex>5</ZIndex>
@@ -1608,8 +1590,42 @@ ORDER BY monthone DESC</CommandText>
               <PaddingRight>2pt</PaddingRight>
             </Style>
           </Textbox>
+          <Textbox Name="textbox11">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>ERROR: The End Date selected occurs before the Start Date.</Value>
+                    <Style>
+                      <FontSize>14pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Color>Red</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.41667in</Top>
+            <Height>0.23958in</Height>
+            <Width>12.20708in</Width>
+            <ZIndex>6</ZIndex>
+            <Visibility>
+              <Hidden>=Parameters!pramStartDate.Value&lt;=Parameters!pramEndDate.Value</Hidden>
+            </Visibility>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>3.64918in</Height>
+        <Height>3.90265in</Height>
         <Style />
       </Body>
       <Width>12.20708in</Width>
@@ -1623,31 +1639,23 @@ ORDER BY monthone DESC</CommandText>
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="MonYYYY">
-      <DataType>DateTime</DataType>
-      <DefaultValue>
-        <DataSetReference>
-          <DataSetName>DateParam</DataSetName>
-          <ValueField>monthone</ValueField>
-        </DataSetReference>
-      </DefaultValue>
-      <Prompt>Mon YYYY</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DateParam</DataSetName>
-          <ValueField>monthone</ValueField>
-          <LabelField>monthyear</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="EndDate">
+    <ReportParameter Name="pramStartDate">
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>=dateadd("d", -1, dateAdd("m", 1, Parameters!MonYYYY.Value))</Value>
+          <Value>=DateAdd("d",-(Day(today)-1), Today)</Value>
         </Values>
       </DefaultValue>
-      <Hidden>true</Hidden>
+      <Prompt>Start Date:</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="pramEndDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=DateSerial(Year(Now()), Month(Now()), "1").AddMonths(1).AddDays(-1)</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>End Date:</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
@@ -1658,12 +1666,12 @@ ORDER BY monthone DESC</CommandText>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>MonYYYY</ParameterName>
+          <ParameterName>pramStartDate</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>EndDate</ParameterName>
+          <ParameterName>pramEndDate</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
