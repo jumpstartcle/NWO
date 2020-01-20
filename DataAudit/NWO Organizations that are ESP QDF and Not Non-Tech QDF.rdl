@@ -3,8 +3,8 @@
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="NWO_Read">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+    <DataSource Name="NWO_SF">
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>b5d387c2-92ca-42dd-b0f8-e621de0cc2a6</rd:DataSourceID>
     </DataSource>
@@ -12,17 +12,17 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>NWO_Read</DataSourceName>
+        <DataSourceName>NWO_SF</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@Start">
+          <QueryParameter Name="@start">
             <Value>=Parameters!Start.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@End">
+          <QueryParameter Name="@end">
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DAOrgsNotQDFNotNonTech</CommandText>
+        <CommandText>SSRS.uspNWO_DAOrgsNotQDFNotNonTech</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

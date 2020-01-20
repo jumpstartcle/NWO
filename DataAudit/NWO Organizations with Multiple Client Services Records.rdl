@@ -691,7 +691,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>700520b8-4d23-4108-a61d-141b632a4250</rd:DataSourceID>
     </DataSource>
@@ -700,7 +700,7 @@
     <DataSet Name="MultipleCSR">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>select * from vwNWO_DA_OrgsMultipleCSRs</CommandText>
+        <CommandText>select * from SSRS.vwNWO_DA_OrgsMultipleCSRs</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

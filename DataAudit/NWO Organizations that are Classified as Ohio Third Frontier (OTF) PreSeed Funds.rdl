@@ -302,7 +302,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>b79023ca-248c-483c-878b-3deb434bef32</rd:DataSourceID>
     </DataSource>
@@ -311,7 +311,7 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT * FROM vwNWO_OTFPreseedFunds</CommandText>
+        <CommandText>SELECT * FROM SSRS.vwNWO_OTFPreseedFunds</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

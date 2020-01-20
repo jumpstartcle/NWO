@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>Integrated</rd:SecurityType>
       <rd:DataSourceID>b73d058e-363d-4152-8032-eeffdee03127</rd:DataSourceID>
     </DataSource>
@@ -20,7 +20,7 @@
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>SELECT * FROM vwNWO_OrgSpinouts
+        <CommandText>SELECT * FROM SSRS.vwNWO_OrgSpinouts
 WHERE CreatedDate  BETWEEN  @Start and @End</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>

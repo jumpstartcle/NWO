@@ -1162,7 +1162,7 @@ If you find that a Contact should have multiple contact records add today's date
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8de8a7f5-4b8c-4757-a230-c63feb708bd1</rd:DataSourceID>
     </DataSource>
@@ -1172,7 +1172,7 @@ If you find that a Contact should have multiple contact records add today's date
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspDA_TwoContactsSameEmailAddress</CommandText>
+        <CommandText>SSRS.uspDA_TwoContactsSameEmailAddress</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

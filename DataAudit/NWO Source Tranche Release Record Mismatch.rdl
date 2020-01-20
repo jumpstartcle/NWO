@@ -752,7 +752,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>24417888-c4f3-4850-b32b-09cef458716a</rd:DataSourceID>
     </DataSource>
@@ -762,7 +762,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DA_SourceTrancheMismatch</CommandText>
+        <CommandText>SSRS.uspNWO_DA_SourceTrancheMismatch</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
