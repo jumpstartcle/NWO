@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>da2ee3a9-3607-4b33-b6b6-f323642158c0</rd:DataSourceID>
     </DataSource>
@@ -13,19 +13,19 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!startdate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!enddate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@PBI">
+          <QueryParameter Name="@pBI">
             <Value>=Parameters!PBI.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESP_QuarterSemiAnnual</CommandText>
+        <CommandText>SSRS.uspNWO_ESP_QuarterSemiAnnual</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -169,10 +169,6 @@
           <DataField>ContactEmail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Total_Number_of_Employees_OH_Override__c">
-          <DataField>Total_Number_of_Employees_OH_Override__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
         <Field Name="ESP_Do_Not_Survey_Reason__c">
           <DataField>ESP_Do_Not_Survey_Reason__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -291,7 +287,7 @@
         </Field>
         <Field Name="ESP_PreSeed">
           <DataField>ESP_PreSeed</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="NonUnderservedAll">
           <DataField>NonUnderservedAll</DataField>
@@ -1477,7 +1473,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>

@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>b302853e-ed0d-4582-a8d0-f3c7663a4a2c</rd:DataSourceID>
     </DataSource>
@@ -13,30 +13,31 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!StartDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@Staff">
+          <QueryParameter Name="@staff">
             <Value>=Parameters!Staff.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!EndDate.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@TimeOff">
-            <Value>=Parameters!TimeOff.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ttEmployee</CommandText>
+        <CommandText>SSRS.uspNWO_ttEmployeeNetwork</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
+        <Field Name="PersonOrgId">
+          <DataField>PersonOrgId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="contactname">
           <DataField>contactname</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="userid">
-          <DataField>userid</DataField>
+        <Field Name="PersonOrgName">
+          <DataField>PersonOrgName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Department">
@@ -127,20 +128,20 @@
           <DataField>allocations__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="IndividualCS">
-          <DataField>IndividualCS</DataField>
+        <Field Name="IndividualCS_Collab">
+          <DataField>IndividualCS_Collab</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Collective">
-          <DataField>Collective</DataField>
+        <Field Name="Collective_Collab">
+          <DataField>Collective_Collab</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ESPOther">
-          <DataField>ESPOther</DataField>
+        <Field Name="ESPOther_Collab">
+          <DataField>ESPOther_Collab</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ESPNonCT">
-          <DataField>ESPNonCT</DataField>
+        <Field Name="ESPNonCT_Collab">
+          <DataField>ESPNonCT_Collab</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="CSname">
@@ -153,6 +154,10 @@
         </Field>
         <Field Name="Comments">
           <DataField>Comments</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ttRecordType">
+          <DataField>ttRecordType</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -169,7 +174,8 @@
     <DataSet Name="DateParam">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT        StartDate,  EndDate FROM   vwNWO_MinMaxTTdate</CommandText>
+        <CommandText>SELECT        StartDate,  EndDate 
+FROM   SSRS.vwNWO_MinMaxTTdate</CommandText>
       </Query>
       <Fields>
         <Field Name="StartDate">
@@ -186,7 +192,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DeprartmentsForRpt</CommandText>
+        <CommandText>SSRS.uspNWO_DeprartmentsForRpt</CommandText>
       </Query>
       <Fields>
         <Field Name="x">

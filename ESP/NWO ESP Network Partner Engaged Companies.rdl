@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c857eb38-7380-480c-b668-33898c66a468</rd:DataSourceID>
     </DataSource>
@@ -19,12 +19,12 @@
           <QueryParameter Name="@end">
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@NetworkPartnerID">
+          <QueryParameter Name="@networkPartnerID">
             <Value>=Parameters!NetworkPartnerID.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESPNetworkPartnerEngaged</CommandText>
+        <CommandText>SSRS.uspNWO_ESPNetworkPartnerEngaged</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -154,7 +154,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandText>SELECT        Id, Name
-FROM            vwNWO_NetworkPartners
+FROM          SSRS.vwNWO_NetworkPartners
 ORDER BY Name</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
@@ -2437,7 +2437,7 @@ ORDER BY Name</CommandText>
             </SortExpressions>
             <Top>1.93194in</Top>
             <Height>1.0625in</Height>
-            <Width>20.14167in</Width>
+            <Width>20.14166in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>f959238e-d318-441e-88e7-8ffcbb3c571f</rd:DataSourceID>
     </DataSource>
@@ -13,12 +13,12 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DealFlowMeetingDates</CommandText>
+        <CommandText>SSRS.uspNWO_DealFlowMeetingDates</CommandText>
       </Query>
       <Fields>
         <Field Name="Meeting_Date__c">
           <DataField>Meeting_Date__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -31,7 +31,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESPdealflow</CommandText>
+        <CommandText>SSRS.uspNWO_ESPdealflow</CommandText>
       </Query>
       <Fields>
         <Field Name="Client_Services__c">
@@ -68,7 +68,7 @@
         </Field>
         <Field Name="Meeting_Date__c">
           <DataField>Meeting_Date__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="Name">
           <DataField>Name</DataField>
@@ -104,12 +104,12 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DealFlowMeetingDateMAX</CommandText>
+        <CommandText>SSRS.uspNWO_DealFlowMeetingDateMAX</CommandText>
       </Query>
       <Fields>
         <Field Name="MaxDate">
           <DataField>MaxDate</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -1540,7 +1540,7 @@
             <DataSetName>DataSet1</DataSetName>
             <Top>1.19236in</Top>
             <Height>0.75in</Height>
-            <Width>16.1875in</Width>
+            <Width>16.18749in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

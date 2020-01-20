@@ -8,7 +8,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>NWO/Survey</TargetReportFolder>
+    <TargetReportFolder>QA/NWO/Survey</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -50,6 +50,8 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="NWO-Read.rds" />
+    <DataSource Include="NWO_SF_Vault-Shared.rds" />
+    <DataSource Include="SF_NWODev-Shared.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO Detail Outcome Metrics For Selected Companies.rdl" />

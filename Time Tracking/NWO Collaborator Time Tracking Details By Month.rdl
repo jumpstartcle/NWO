@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>b302853e-ed0d-4582-a8d0-f3c7663a4a2c</rd:DataSourceID>
     </DataSource>
@@ -13,26 +13,22 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!StartDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!EndDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@Staff">
+          <QueryParameter Name="@staff">
             <Value>=IIF(Parameters!Staff.Value = "ALL", Nothing,Parameters!Staff.Value)</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ttEmployeeNetwork</CommandText>
+        <CommandText>ssrs.uspNWO_ttEmployeeNetwork</CommandText>
       </Query>
       <Fields>
         <Field Name="contactname">
           <DataField>contactname</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="userid">
-          <DataField>userid</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="PersonOrgId">
@@ -178,7 +174,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandText>SELECT        monthyear, monthone
-FROM            vwNWO_CalMonthYear13
+FROM            SSRS.vwNWO_CalMonthYear13
 ORDER BY monthone DESC</CommandText>
       </Query>
       <Fields>
@@ -211,7 +207,7 @@ SELECT        Id
 ,  IsActive
 , PartnerID
 , PartnerName
-FROM         vwNWO_NetworkStaff 
+FROM         SSRS.vwNWO_NetworkStaff 
 WHERE PartnerID = 
                                      CASE WHEN  @NetworkPartner = 'ALL'  THEN PartnerID 
                                                ELSE @NetworkPartner
@@ -247,7 +243,7 @@ ORDER BY 3 DESC, 2 ASC</CommandText>
         <CommandText>SELECT 'ALL' as ID, 'ALL' as Name
 UNION
 SELECT        Id, Name
-FROM            vwNWO_NetworkPartners
+FROM            SSRS.vwNWO_NetworkPartners
 WHERE Name NOT LIKE 'JumpStart%'
 ORDER BY Name</CommandText>
       </Query>

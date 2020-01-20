@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>63e4a122-2a17-4466-b1c5-ad3a150ca741</rd:DataSourceID>
     </DataSource>
@@ -12,7 +12,7 @@
     <DataSet Name="SurveyPeriods">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>select  EndDate as period_date  from vwNWO_YHcrdindex
+        <CommandText>select  EndDate as period_date  from SSRS.vwNWO_YHcrdindex
 order by EndDate desc
 
 --select period_date from vwYHcrdindex
@@ -22,7 +22,7 @@ order by EndDate desc
       <Fields>
         <Field Name="period_date">
           <DataField>period_date</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -30,15 +30,15 @@ order by EndDate desc
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@YHdate1">
+          <QueryParameter Name="@yHdate1">
             <Value>=Parameters!YHdate1.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@YHdate2">
+          <QueryParameter Name="@yHdate2">
             <Value>=Parameters!YHdate2.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_OutcomeMetricsForSelectedCompanies</CommandText>
+        <CommandText>SSRS.uspNWO_OutcomeMetricsForSelectedCompanies</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -118,10 +118,6 @@ order by EndDate desc
           <DataField>ESP_Tech_Focus_Area_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LegallyDisabledOwner">
-          <DataField>LegallyDisabledOwner</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="LGBTQOwner">
           <DataField>LGBTQOwner</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -164,10 +160,6 @@ order by EndDate desc
         </Field>
         <Field Name="Approximate_Average_Salary__c">
           <DataField>Approximate_Average_Salary__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Number_of_Employees_in_NWO">
-          <DataField>Number of Employees in NWO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Total_Number_of_FTEs_OH__c">
@@ -282,19 +274,18 @@ order by EndDate desc
           </QueryParameter>
         </QueryParameters>
         <CommandText>
-select  EndDate as period_date  from vwNWO_YHcrdindex
+select  EndDate as period_date  from SSRS.vwNWO_YHcrdindex
 where EndDate  &gt;=@YHdate1
 order by EndDate desc
 
 --select period_date from vwYHcrdindex
 --where period_date&gt;=@YHdate1
---order by period_date desc
-</CommandText>
+--order by period_date desc</CommandText>
       </Query>
       <Fields>
         <Field Name="period_date">
           <DataField>period_date</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -392,9 +383,6 @@ order by EndDate desc
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.53156in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.35447in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.82323in</Width>
@@ -1425,42 +1413,6 @@ order by EndDate desc
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox70</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox49">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Number of Employees in NWO</Value>
-                                  <Style>
-                                    <FontStyle>Normal</FontStyle>
-                                    <FontWeight>Bold</FontWeight>
-                                    <TextDecoration>None</TextDecoration>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox49</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -3356,41 +3308,6 @@ order by EndDate desc
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Number_of_Employees_in_NWO">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!Number_of_Employees_in_NWO.Value)</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Number_of_Employees_in_NWO</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Style>None</Style>
-                            </TopBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="Contractor_Count">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -4344,7 +4261,6 @@ order by EndDate desc
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -4382,7 +4298,7 @@ order by EndDate desc
             </SortExpressions>
             <Top>2.18542in</Top>
             <Height>0.5in</Height>
-            <Width>76.71155in</Width>
+            <Width>75.35708in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

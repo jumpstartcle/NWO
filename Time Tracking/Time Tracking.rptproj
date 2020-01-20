@@ -8,7 +8,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>NWO/Time Tracking</TargetReportFolder>
+    <TargetReportFolder>QA/NWO/Time Tracking</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -50,6 +50,8 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="NWO-Read.rds" />
+    <DataSource Include="NWO_SF_Vault-Shared.rds" />
+    <DataSource Include="SF_NWODev-Shared.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO All Employee Time Detail with CSR-Subject-Comments.rdl" />

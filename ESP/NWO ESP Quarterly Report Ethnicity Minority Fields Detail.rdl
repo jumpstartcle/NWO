@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>778eeca4-5ec8-4c88-8c9b-0c2c9d487448</rd:DataSourceID>
     </DataSource>
@@ -20,7 +20,7 @@
             <Value>=Parameters!End.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>select  *  from vwNWO_EthnicityMinorityCleanUp
+        <CommandText>select  *  from SSRS.vwNWO_EthnicityMinorityCleanUp
 WHERE   Date_of_First_Contact__c between @Start and @End</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>

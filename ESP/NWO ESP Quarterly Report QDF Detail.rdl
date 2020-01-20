@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>a7d11fa0-71cf-4279-95da-7fd0d1256394</rd:DataSourceID>
     </DataSource>
@@ -21,7 +21,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_QuarterlyDealFlow</CommandText>
+        <CommandText>SSRS.uspNWO_QuarterlyDealFlow</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -218,7 +218,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1229,7 +1228,7 @@
             </Filters>
             <Top>2.69056in</Top>
             <Height>0.42in</Height>
-            <Width>25.66457in</Width>
+            <Width>25.66462in</Width>
             <Style />
           </Tablix>
           <Textbox Name="textbox1">

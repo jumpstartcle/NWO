@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>63e4a122-2a17-4466-b1c5-ad3a150ca741</rd:DataSourceID>
     </DataSource>
@@ -12,18 +12,18 @@
     <DataSet Name="TimePeriod">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT DISTINCT rc.YH AS YearHalf
-FROM          rptCalendar AS rc 
-	inner join vwNWO_Company_Reporting_Data crd on rc.dt = crd.Employment_Data_As_Of__c 
-WHERE rc.dt &gt; '7/1/2015' 
+        <CommandText>SELECT DISTINCT rc.CalendarHalfEndDate AS YearHalf
+FROM          [Auxiliary].[Date_Dimension] AS rc 
+	inner join SSRS.vwNWO_Company_Reporting_Data crd on rc.Date = crd.Employment_Data_As_Of__c 
+WHERE rc.Date &gt; '7/1/2015' 
 and crd.RecordType in ('Point In Time Data', 'Point In Time Data - Locked')
-order by rc.yh desc</CommandText>
+order by rc.CalendarHalfEndDate desc</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="YearHalf">
           <DataField>YearHalf</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -31,15 +31,15 @@ order by rc.yh desc</CommandText>
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@YHdate1">
+          <QueryParameter Name="@yHdate1">
             <Value>=Parameters!PrevPeriod.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@YHdate2">
+          <QueryParameter Name="@yHdate2">
             <Value>=Parameters!Years.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_OutcomeMetricsForSelectedCompanies</CommandText>
+        <CommandText>ssrs.uspNWO_OutcomeMetricsForSelectedCompanies</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -53,6 +53,10 @@ order by rc.yh desc</CommandText>
         </Field>
         <Field Name="ESP_Survey">
           <DataField>ESP Survey</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Non_Tech_Survey">
+          <DataField>Non Tech Survey</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="OrganizationId">
@@ -119,10 +123,6 @@ order by rc.yh desc</CommandText>
           <DataField>ESP_Primary_Market_or_Application_2017__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LegallyDisabledOwner">
-          <DataField>LegallyDisabledOwner</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="LGBTQOwner">
           <DataField>LGBTQOwner</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -165,10 +165,6 @@ order by rc.yh desc</CommandText>
         </Field>
         <Field Name="Total_Number_of_FTEs_OH__c">
           <DataField>Total_Number_of_FTEs_OH__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Number_of_Employees_in_NWO">
-          <DataField>Number of Employees in NWO</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Contractor_Count">
@@ -294,33 +290,33 @@ order by rc.yh desc</CommandText>
     <DataSet Name="YHDefault">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT max(rc.YH) AS YearHalf
-FROM          rptCalendar AS rc 
-	inner join vwNWO_Company_Reporting_Data crd on rc.dt = crd.Employment_Data_As_Of__c 
-WHERE rc.dt &gt; '7/1/2015' 
+        <CommandText>SELECT max(rc.CalendarHalfEndDate) AS YearHalf
+FROM          [Auxiliary].[Date_Dimension] AS rc 
+	inner join ssrs.vwNWO_Company_Reporting_Data crd on rc.Date = crd.Employment_Data_As_Of__c 
+WHERE rc.Date &gt; '7/1/2015' 
 and crd.RecordType in ('Point In Time Data')</CommandText>
       </Query>
       <Fields>
         <Field Name="YearHalf">
           <DataField>YearHalf</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
     <DataSet Name="YHPrev">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>SELECT max(rc.YH) AS YearHalf
-FROM          rptCalendar AS rc 
-	inner join vwNWO_Company_Reporting_Data crd on rc.dt = crd.Employment_Data_As_Of__c 
-WHERE rc.dt &gt; '7/1/2015' 
+        <CommandText>SELECT max(rc.CalendarHalfEndDate) AS YearHalf
+FROM          [Auxiliary].[Date_Dimension] AS rc 
+	inner join ssrs.vwNWO_Company_Reporting_Data crd on rc.date = crd.Employment_Data_As_Of__c 
+WHERE rc.date &gt; '7/1/2015' 
 and crd.RecordType in ('Point In Time Data')
-and rc.dt &lt;  (SELECT  MAX(c.Employment_Data_As_Of__c) from vwNWO_Company_Reporting_Data c)</CommandText>
+and rc.date &lt;  (SELECT  MAX(c.Employment_Data_As_Of__c) from ssrs.vwNWO_Company_Reporting_Data c)</CommandText>
       </Query>
       <Fields>
         <Field Name="YearHalf">
           <DataField>YearHalf</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>

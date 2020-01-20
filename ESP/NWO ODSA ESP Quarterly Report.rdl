@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>b11e0086-f9a6-43fe-9430-a191c20ae153</rd:DataSourceID>
     </DataSource>
@@ -18,7 +18,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESP_DataParam</CommandText>
+        <CommandText>SSRS.uspNWO_ESP_DataParam</CommandText>
       </Query>
       <Fields>
         <Field Name="Qname">
@@ -39,19 +39,19 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!startdate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!enddate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@PBI">
+          <QueryParameter Name="@pBI">
             <Value>=Parameters!PBI.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESP_QuarterSemiAnnual</CommandText>
+        <CommandText>SSRS.uspNWO_ESP_QuarterSemiAnnual</CommandText>
       </Query>
       <Fields>
         <Field Name="csid">
@@ -205,10 +205,6 @@
         <Field Name="Wocl">
           <DataField>Wocl</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Total_Number_of_Employees_OH_Override__c">
-          <DataField>Total_Number_of_Employees_OH_Override__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ODSAClientType">
           <DataField>ODSAClientType</DataField>
@@ -505,7 +501,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_QuarterlyDealFlow</CommandText>
+        <CommandText>SSRS.uspNWO_QuarterlyDealFlow</CommandText>
       </Query>
       <Fields>
         <Field Name="id">
@@ -626,7 +622,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_QuarterlyReferrals</CommandText>
+        <CommandText>SSRS.uspNWO_QuarterlyReferrals</CommandText>
       </Query>
       <Fields>
         <Field Name="ID">

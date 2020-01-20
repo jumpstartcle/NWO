@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c6160e00-ab4f-414a-a99f-cf631b1beb9e</rd:DataSourceID>
     </DataSource>
@@ -13,12 +13,12 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@SvyDate">
+          <QueryParameter Name="@svyDate">
             <Value>=Parameters!SvyDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_SurveyResponseRates</CommandText>
+        <CommandText>ssrs.uspNWO_SurveyResponseRates</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -93,7 +93,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandText>SELECT DISTINCT CONVERT(date, crs.Employment_Data_As_Of__c) Employment_Data_As_Of__c
-FROM         Company_Reporting_Survey__c AS crs
+FROM         sf.Company_Reporting_Survey__c AS crs
 ORDER BY Employment_Data_As_Of__c DESC</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
@@ -108,7 +108,7 @@ ORDER BY Employment_Data_As_Of__c DESC</CommandText>
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandText>SELECT        Convert(date, MAX(Employment_Data_As_Of__c)) AS Expr1
-FROM            Company_Reporting_Survey__c AS crs</CommandText>
+FROM            sf.Company_Reporting_Survey__c AS crs</CommandText>
       </Query>
       <Fields>
         <Field Name="Expr1">
