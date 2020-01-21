@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>4e7ef41c-d572-432b-88b6-1f3600b38354</rd:DataSourceID>
     </DataSource>
@@ -13,12 +13,12 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@CSId">
+          <QueryParameter Name="@cSId">
             <Value>=Parameters!CSID.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_DealFlowMeetingOpenTask</CommandText>
+        <CommandText>SSRS.uspNWO_DealFlowMeetingOpenTask</CommandText>
       </Query>
       <Fields>
         <Field Name="AssignedTo">

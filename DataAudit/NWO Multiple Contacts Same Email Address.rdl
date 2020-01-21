@@ -1162,7 +1162,7 @@ If you find that a Contact should have multiple contact records add today's date
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
+      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>8de8a7f5-4b8c-4757-a230-c63feb708bd1</rd:DataSourceID>
     </DataSource>
