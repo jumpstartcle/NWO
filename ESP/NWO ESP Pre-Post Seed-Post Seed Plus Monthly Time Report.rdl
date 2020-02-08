@@ -19,6 +19,10 @@
           <QueryParameter Name="@EndDate">
             <Value>=Parameters!pramEndDate.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@Orgs">
+            <Value>=Parameters!pramOrganizationName.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>SSRS.uspNWO_ESP_PrePostSeedPlus</CommandText>
@@ -95,6 +99,26 @@
         </Field>
         <Field Name="EmployeeNumber">
           <DataField>EmployeeNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="NwoEspNetworkPartners">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>Select  [Id], [Name]
+From [SSRS].[vwNWO_NetworkPartners]
+Where [Name] &lt;&gt; 'JumpStart, Inc.'
+And [Name] &lt;&gt; 'JumpStart'
+Order By [Name]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -1639,6 +1663,18 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
+    <ReportParameter Name="pramOrganizationName">
+      <DataType>String</DataType>
+      <Prompt>Organization(s):</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>NwoEspNetworkPartners</DataSetName>
+          <ValueField>Id</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
     <ReportParameter Name="pramStartDate">
       <DataType>DateTime</DataType>
       <DefaultValue>
@@ -1661,17 +1697,22 @@
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>2</NumberOfColumns>
-      <NumberOfRows>1</NumberOfRows>
+      <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
+          <RowIndex>1</RowIndex>
           <ParameterName>pramStartDate</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
-          <RowIndex>0</RowIndex>
+          <RowIndex>1</RowIndex>
           <ParameterName>pramEndDate</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pramOrganizationName</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
