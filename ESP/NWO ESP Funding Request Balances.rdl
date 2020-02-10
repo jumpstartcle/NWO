@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>4482ce5c-d94e-4f9e-8081-719b80395caa</rd:DataSourceID>
     </DataSource>
@@ -14,7 +14,7 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_ESPFundingRequestBalances</CommandText>
+        <CommandText>SSRS.uspNWO_ESPFundingRequestBalances</CommandText>
       </Query>
       <Fields>
         <Field Name="Organization">
