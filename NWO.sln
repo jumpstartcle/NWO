@@ -11,6 +11,8 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ESP", "ESP\ESP.rptproj", "{
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Time Tracking", "Time Tracking\Time Tracking.rptproj", "{1B9855B3-284B-4476-833A-7F183F356F7E}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Time Tracking Archive", "Time Tracking Archive\Time Tracking Archive.rptproj", "{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -51,6 +53,14 @@ Global
 		{1B9855B3-284B-4476-833A-7F183F356F7E}.Release|Default.ActiveCfg = Release
 		{1B9855B3-284B-4476-833A-7F183F356F7E}.Release|Default.Build.0 = Release
 		{1B9855B3-284B-4476-833A-7F183F356F7E}.Release|Default.Deploy.0 = Release
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Debug|Default.ActiveCfg = Debug
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Debug|Default.Build.0 = Debug
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Debug|Default.Deploy.0 = Debug
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.DebugLocal|Default.Build.0 = DebugLocal
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Release|Default.ActiveCfg = Release
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Release|Default.Build.0 = Release
+		{88977BEF-FC6C-4BA0-AF2D-8AA5222712BB}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

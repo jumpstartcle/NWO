@@ -8,11 +8,11 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>NWO/Time Tracking</TargetReportFolder>
+    <TargetReportFolder>Time Tracking Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>https://report.jumpstartinc.org/reportserver</TargetServerURL>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -22,7 +22,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>Time Tracking</TargetReportFolder>
+    <TargetReportFolder>Time Tracking Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -36,7 +36,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>Time Tracking</TargetReportFolder>
+    <TargetReportFolder>Time Tracking Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -54,7 +54,9 @@
     <DataSource Include="SF_NWODev-Shared.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="NWO Collaborator Time Tracking Details By Month.rdl" />
+    <Report Include="NWO All Employee Time Detail with CSR-Subject-Comments.rdl" />
+    <Report Include="NWO Employee Time Summary - Month End Allocation Original.rdl" />
+    <Report Include="NWO Timesheet.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
