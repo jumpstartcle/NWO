@@ -58,6 +58,7 @@
     <Report Include="NWO DealFlowMeeting OpenTask SUBREPORT.rdl" />
     <Report Include="NWO ESP Funding Request Balances.rdl" />
     <Report Include="NWO ESP Network Partner Engaged Companies.rdl" />
+    <Report Include="NWO ESP Network Partner Hours by Staff by Company Investment Stage.rdl" />
     <Report Include="NWO ESP Pre-Post Seed-Post Seed Plus Monthly Time Report.rdl" />
     <Report Include="NWO ESP Quarterly Report Ethnicity Minority Fields Detail.rdl" />
     <Report Include="NWO ESP Quarterly Report QDF Detail.rdl" />
