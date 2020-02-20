@@ -15639,7 +15639,7 @@
       <DataType>DateTime</DataType>
       <DefaultValue>
         <Values>
-          <Value>04/01/2019 00:00:00</Value>
+          <Value>1/1/2020 12:00:00 AM</Value>
         </Values>
       </DefaultValue>
       <Prompt>Select Quarter</Prompt>
@@ -15708,6 +15708,22 @@
           <ParameterValue>
             <Value>10/01/2019 00:00:00</Value>
             <Label>2019 Q4</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>01/01/2020 00:00:00</Value>
+            <Label>2020 Q1</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>04/01/2020 00:00:00</Value>
+            <Label>2020 Q2</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>07/01/2020 00:00:00</Value>
+            <Label>2020 Q3</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>10/01/2020 00:00:00</Value>
+            <Label>2020 Q4</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
@@ -15786,6 +15802,22 @@
           <ParameterValue>
             <Value>12/31/2019 00:00:00</Value>
             <Label>2019-Q4</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>03/31/2020 00:00:00</Value>
+            <Label>2020-Q1</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>06/30/2020 00:00:00</Value>
+            <Label>2020-Q2</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>09/30/2020 00:00:00</Value>
+            <Label>2020-Q3</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>12/31/2020 00:00:00</Value>
+            <Label>2020-Q4</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
