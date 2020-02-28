@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>807f409d-a529-497d-bf7c-110a41214584</rd:DataSourceID>
     </DataSource>
@@ -18,7 +18,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_PrelimSurveyPull</CommandText>
+        <CommandText>SSRS.uspNWO_PrelimSurveyPull</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -52,10 +52,6 @@
         </Field>
         <Field Name="Organization">
           <DataField>Organization</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CssSenderOrg">
-          <DataField>CssSenderOrg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Entrepreneur_First_Name">
@@ -163,9 +159,6 @@
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.66975in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.5in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.99062in</Width>
@@ -542,57 +535,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox33</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox7">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>CSS Sender Org</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox7</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1658,55 +1600,6 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="CssSenderOrg">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!CssSenderOrg.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>CssSenderOrg</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
                         <Textbox Name="Organization">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -2342,7 +2235,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -2361,9 +2253,9 @@
                 <Value>=Fields!Organization.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>1.95486in</Top>
+            <Top>1.96875in</Top>
             <Height>0.5in</Height>
-            <Width>32.41585in</Width>
+            <Width>30.91585in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2390,7 +2282,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox64</rd:DefaultName>
             <Height>0.375in</Height>
-            <Width>32.41585in</Width>
+            <Width>30.91585in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -2419,9 +2311,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>textbox11</rd:DefaultName>
-            <Top>0.375in</Top>
+            <Top>0.38889in</Top>
             <Height>0.15in</Height>
-            <Width>32.41585in</Width>
+            <Width>30.91585in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
@@ -2445,9 +2337,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>0.525in</Top>
+            <Top>0.53889in</Top>
             <Height>0.15in</Height>
-            <Width>32.41585in</Width>
+            <Width>30.91585in</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -2591,9 +2483,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox10</rd:DefaultName>
-            <Top>0.675in</Top>
+            <Top>0.68889in</Top>
             <Height>1.2257in</Height>
-            <Width>32.41585in</Width>
+            <Width>30.91585in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -2604,10 +2496,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.45486in</Height>
+        <Height>2.46875in</Height>
         <Style />
       </Body>
-      <Width>32.41585in</Width>
+      <Width>30.91585in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

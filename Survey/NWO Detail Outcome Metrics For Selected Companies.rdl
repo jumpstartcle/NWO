@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>63e4a122-2a17-4466-b1c5-ad3a150ca741</rd:DataSourceID>
     </DataSource>
@@ -12,17 +12,14 @@
     <DataSet Name="SurveyPeriods">
       <Query>
         <DataSourceName>NWO</DataSourceName>
-        <CommandText>select  EndDate as period_date  from SSRS.vwNWO_YHcrdindex
-order by EndDate desc
-
---select period_date from vwYHcrdindex
---order by period_date desc</CommandText>
+        <CommandText>select Cast(Cast(EndDate As date) As varchar) as period_date  from SSRS.vwNWO_YHcrdindex
+order by EndDate desc</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="period_date">
           <DataField>period_date</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -273,19 +270,14 @@ order by EndDate desc
             <Value>=Parameters!YHdate1.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>
-select  EndDate as period_date  from SSRS.vwNWO_YHcrdindex
+        <CommandText>select Cast(Cast(EndDate As date) As varchar) as period_date  from SSRS.vwNWO_YHcrdindex
 where EndDate  &gt;=@YHdate1
-order by EndDate desc
-
---select period_date from vwYHcrdindex
---where period_date&gt;=@YHdate1
---order by period_date desc</CommandText>
+order by EndDate desc</CommandText>
       </Query>
       <Fields>
         <Field Name="period_date">
           <DataField>period_date</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>

@@ -3,7 +3,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>NWO-Read</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>674d7fc5-0c8f-4312-b98d-2b176781b4a1</rd:DataSourceID>
     </DataSource>
@@ -13,21 +13,21 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@SurveyProgram">
+          <QueryParameter Name="@surveyProgram">
             <Value>=Parameters!SurveyProgram.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
-          <QueryParameter Name="@SenderOrg">
+          <QueryParameter Name="@senderOrg">
             <Value>=Parameters!SenderOrg.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
-          <QueryParameter Name="@SenderName">
+          <QueryParameter Name="@senderName">
             <Value>=Parameters!SenderName.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_UncompletedSurveys</CommandText>
+        <CommandText>SSRS.uspNWO_UncompletedSurveys</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -83,17 +83,13 @@
           <DataField>Qualtrics_Survey_Link__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Survey_Reason__c">
-          <DataField>Survey_Reason__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="SenderOrg">
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_UncompletedSurveys_SenderOrg</CommandText>
+        <CommandText>SSRS.uspNWO_UncompletedSurveys_SenderOrg</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -115,15 +111,15 @@
       <Query>
         <DataSourceName>NWO</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@SurveyProgram">
+          <QueryParameter Name="@surveyProgram">
             <Value>=Parameters!SurveyProgram.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@SenderOrg">
+          <QueryParameter Name="@senderOrg">
             <Value>=Parameters!SenderOrg.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspNWO_UncompletedSurveys_SenderContacts</CommandText>
+        <CommandText>SSRS.uspNWO_UncompletedSurveys_SenderContacts</CommandText>
       </Query>
       <Fields>
         <Field Name="SenderID">
