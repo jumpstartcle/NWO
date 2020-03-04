@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="NWO">
-      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
+      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>4482ce5c-d94e-4f9e-8081-719b80395caa</rd:DataSourceID>
     </DataSource>
