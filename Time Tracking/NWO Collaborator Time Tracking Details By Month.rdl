@@ -63,16 +63,16 @@
           <DataField>RptDayofWeek</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Program_Code">
+          <DataField>Program_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="RptDate">
           <DataField>RptDate</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Line_of_Business__c">
           <DataField>Line_of_Business__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Program_Code_f__c">
-          <DataField>Program_Code_f__c</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Time_Spent__c">
