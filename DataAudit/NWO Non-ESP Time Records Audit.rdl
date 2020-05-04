@@ -1228,7 +1228,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Displays all Time Tracking Records by Network Partner if their Clients Time Tracking Records include NON-ESP Time.</Value>
+                    <Value>Displays all Non-ESP Time Tracking Records for all Network Partners (including JumpStart) where:</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1242,7 +1242,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Time Tracking Records are included in the report if:</Value>
+                    <Value>The Time Tracking Record  Activity Date is between the Time Tracking Start Date and the Time Tracking End Date in the Report Parameters.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1251,6 +1251,7 @@ ORDER BY Name</CommandText>
                     </Style>
                   </TextRun>
                 </TextRuns>
+                <ListLevel>1</ListLevel>
                 <Style>
                   <TextAlign>Left</TextAlign>
                 </Style>
@@ -1258,7 +1259,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>            The Time Tracking Record Date is between the Time Tracking Start Date and the Time Tracking End Date in the Report Parameters.</Value>
+                    <Value>And the Client Services Record Type equals ‘NWO Services’.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1267,6 +1268,7 @@ ORDER BY Name</CommandText>
                     </Style>
                   </TextRun>
                 </TextRuns>
+                <ListLevel>1</ListLevel>
                 <Style>
                   <TextAlign>Left</TextAlign>
                 </Style>
@@ -1274,23 +1276,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>            And the Client Services Record Type equals ‘NWO Services’.</Value>
-                    <Style>
-                      <FontStyle>Normal</FontStyle>
-                      <FontWeight>Normal</FontWeight>
-                      <TextDecoration>None</TextDecoration>
-                      <Color>#000000</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>            And the Time Tracking Record Type equals ‘Non-ESP Time Collaborators’, ‘Non-ESP Time Collaborators Locked’, ‘Non-ESP Time Staff’ or ‘Non-ESP Time Staff Locked’.</Value>
+                    <Value>          And the Time Tracking Record Line of Business ID equals 'TCCY' or 'ESPNT'.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
@@ -1389,7 +1375,7 @@ ORDER BY Name</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>To provide a status update to the Network Partners about the Non-ESP Time logged in Salesforce. This time can only be logged by ESP Network Partners.</Value>
+                    <Value>To provide a status update to the Network Partners about the Non-ESP Time logged in Salesforce.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
