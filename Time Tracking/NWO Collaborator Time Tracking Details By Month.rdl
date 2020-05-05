@@ -22,6 +22,9 @@
           <QueryParameter Name="@staff">
             <Value>=IIF(Parameters!Staff.Value = "ALL", Nothing,Parameters!Staff.Value)</Value>
           </QueryParameter>
+          <QueryParameter Name="@TimeSpentType">
+            <Value>=Parameters!pramTimeSpentType.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>ssrs.uspNWO_ttEmployeeNetwork</CommandText>
@@ -1816,6 +1819,31 @@ ORDER BY Name</CommandText>
       <DataType>DateTime</DataType>
       <Prompt>End Date</Prompt>
     </ReportParameter>
+    <ReportParameter Name="pramTimeSpentType">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>All</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Time Spent Type</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>All</Value>
+            <Label>ALL</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>ESP</Value>
+            <Label>ESP</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>NonESP</Value>
+            <Label>Non-ESP</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
     <ReportParameter Name="NetworkPartner">
       <DataType>String</DataType>
       <Prompt>Select Network Partner</Prompt>
@@ -1841,7 +1869,7 @@ ORDER BY Name</CommandText>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfColumns>3</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
@@ -1863,6 +1891,11 @@ ORDER BY Name</CommandText>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>1</RowIndex>
           <ParameterName>Staff</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>pramTimeSpentType</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>
