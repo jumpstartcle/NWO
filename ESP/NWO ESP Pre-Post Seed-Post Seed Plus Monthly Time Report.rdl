@@ -1393,7 +1393,23 @@ Order By [Name]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>The Time Tracking Record Type includes the phrase "ESP Time".</Value>
+                    <Value>The Time Tracking Records Line of Business equals 'TESP'</Value>
+                    <Style>
+                      <FontStyle>Normal</FontStyle>
+                      <FontWeight>Normal</FontWeight>
+                      <TextDecoration>None</TextDecoration>
+                      <Color>#000000</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <ListStyle>Bulleted</ListStyle>
+                <ListLevel>1</ListLevel>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>And the User's Company (Organization Record) has the field 'ESP Network Partner Start Date' that is not Blank and the 'ESP Network Partner End Date' is Blank.</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontWeight>Normal</FontWeight>
