@@ -8,11 +8,11 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>QA/NWO/ESP</TargetReportFolder>
+    <TargetReportFolder>ESP Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>https://report.jumpstartinc.org/reportserver</TargetServerURL>
+    <TargetServerURL>http://localhost/reportserver</TargetServerURL>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
     <FullPath>DebugLocal</FullPath>
@@ -22,7 +22,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>ESP</TargetReportFolder>
+    <TargetReportFolder>ESP Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -36,7 +36,7 @@
     <OverwriteDataSources>False</OverwriteDataSources>
     <TargetServerVersion>SSRS2016</TargetServerVersion>
     <Platform>Win32</Platform>
-    <TargetReportFolder>ESP</TargetReportFolder>
+    <TargetReportFolder>ESP Archive</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -49,24 +49,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
-    <DataSource Include="NWO_SF_Vault-Shared.rds" />
-    <DataSource Include="SF_NWODev-Shared.rds" />
-  </ItemGroup>
-  <ItemGroup>
-    <Report Include="NWO CSR OpenTasks.rdl" />
-    <Report Include="NWO Deal Flow Meeting PrePost Report.rdl" />
-    <Report Include="NWO DealFlowMeeting OpenTask SUBREPORT.rdl" />
-    <Report Include="NWO ESP Funding Request Balances.rdl" />
-    <Report Include="NWO ESP Network Collaborator Engaged Companies.rdl" />
-    <Report Include="NWO ESP Network Partner Hours by Staff by Company Investment Stage.rdl" />
-    <Report Include="NWO ESP Pre-Post Seed-Post Seed Plus Monthly Time Report.rdl" />
-    <Report Include="NWO ESP Quarterly Report Ethnicity Minority Fields Detail.rdl" />
-    <Report Include="NWO ESP Quarterly Report QDF Detail.rdl" />
-    <Report Include="NWO ESP Quarterly Report Referral Data Detail.rdl" />
-    <Report Include="NWO ESP Quarterly Semi-Annual Report Client Detail.rdl" />
-    <Report Include="NWO ODSA ESP Client List - Active Client Status Update (Tab 2).rdl" />
-    <Report Include="NWO ODSA ESP Client List - Client Metrics (Tab 3).rdl" />
-    <Report Include="NWO ODSA ESP Quarterly Report.rdl" />
+    <Report Include="NWO ESP Network Partner Engaged Companies.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
