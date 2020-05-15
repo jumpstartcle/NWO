@@ -4,7 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource1">
-      <DataSourceReference>NWO_SF_Vault-Shared</DataSourceReference>
+      <DataSourceReference>SF_NWODev-Shared</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c15b6d95-b43d-4d02-8002-cace55443e79</rd:DataSourceID>
     </DataSource>
@@ -867,7 +867,7 @@ Order By [Name]</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Stage at First Contact</Value>
+                                  <Value>ESP Comm Stage at First Contact</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -900,7 +900,7 @@ Order By [Name]</CommandText>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ESP Operating Stage</Value>
+                                  <Value>ESP Current Comm Stage</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
