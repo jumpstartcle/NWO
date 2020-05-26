@@ -13,19 +13,19 @@
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@StartDate">
+          <QueryParameter Name="@startDate">
             <Value>=Parameters!pramStartDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@EndDate">
+          <QueryParameter Name="@endDate">
             <Value>=Parameters!pramEndDate.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@Orgs">
+          <QueryParameter Name="@orgs">
             <Value>=Parameters!pramOrganizationName.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>SSRS.uspNWO_ESP_PrePostSeedPlus</CommandText>
+        <CommandText>SSRS.uspNWO_EspCollaboratorPrePostSeedPostSeedPlusMonthlyTime</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -33,25 +33,9 @@
           <DataField>ContactName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Id">
-          <DataField>Id</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="OrganizationName">
           <DataField>OrganizationName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Person__c">
-          <DataField>Person__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Date__c">
-          <DataField>Date__c</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Time_Spent__c">
-          <DataField>Time_Spent__c</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="ClientPreInvest">
           <DataField>ClientPreInvest</DataField>
@@ -69,47 +53,18 @@
           <DataField>PostSeedPlusInvest</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Client_Services__c">
-          <DataField>Client_Services__c</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="ESPOther">
           <DataField>ESPOther</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ttRecordType">
-          <DataField>ttRecordType</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CS_Name">
-          <DataField>CS_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="name">
-          <DataField>name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PostInvest_Disbursement_Date">
-          <DataField>PostInvest_Disbursement_Date</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="PostSeedPlus_Disbursement_Date">
-          <DataField>PostSeedPlus_Disbursement_Date</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="EmployeeNumber">
-          <DataField>EmployeeNumber</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="NwoEspNetworkPartners">
+    <DataSet Name="OrgParamDataSet">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
         <CommandText>Select  [Id], [Name]
 From [SSRS].[vwNWO_NetworkPartners]
 Where [Name] &lt;&gt; 'JumpStart, Inc.'
-And [Name] &lt;&gt; 'JumpStart'
 Order By [Name]</CommandText>
       </Query>
       <Fields>
@@ -1282,7 +1237,7 @@ Order By [Name]</CommandText>
                   <KeepTogether>true</KeepTogether>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="table1_ContactName">
+                  <Group Name="Table1RowGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!OrganizationName.Value</GroupExpression>
                       <GroupExpression>=Fields!ContactName.Value</GroupExpression>
@@ -1576,7 +1531,7 @@ Order By [Name]</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Query Last Modified/Reviewed: 1/16/2020</Value>
+                    <Value>Query Last Modified/Reviewed: 5/22/2020</Value>
                     <Style>
                       <FontSize>9pt</FontSize>
                     </Style>
@@ -1684,7 +1639,7 @@ Order By [Name]</CommandText>
       <Prompt>Organization(s):</Prompt>
       <ValidValues>
         <DataSetReference>
-          <DataSetName>NwoEspNetworkPartners</DataSetName>
+          <DataSetName>OrgParamDataSet</DataSetName>
           <ValueField>Id</ValueField>
           <LabelField>Name</LabelField>
         </DataSetReference>
