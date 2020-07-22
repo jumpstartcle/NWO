@@ -15,6 +15,8 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Time Tracking Archive", "Ti
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ESP Archive", "ESP Archive\ESP Archive.rptproj", "{2F6A6DB9-6D93-4856-AC3B-0B36C40A3114}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DataAudit Archive", "DataAudit Archive\DataAudit Archive.rptproj", "{D9BE1993-D858-47EC-BDF7-886465EA00FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
@@ -71,6 +73,14 @@ Global
 		{2F6A6DB9-6D93-4856-AC3B-0B36C40A3114}.Release|Default.ActiveCfg = Release
 		{2F6A6DB9-6D93-4856-AC3B-0B36C40A3114}.Release|Default.Build.0 = Release
 		{2F6A6DB9-6D93-4856-AC3B-0B36C40A3114}.Release|Default.Deploy.0 = Release
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Debug|Default.ActiveCfg = Debug
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Debug|Default.Build.0 = Debug
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Debug|Default.Deploy.0 = Debug
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.DebugLocal|Default.Build.0 = DebugLocal
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Release|Default.ActiveCfg = Release
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Release|Default.Build.0 = Release
+		{D9BE1993-D858-47EC-BDF7-886465EA00FF}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

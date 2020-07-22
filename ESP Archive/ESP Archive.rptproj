@@ -49,6 +49,7 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <Report Include="NWO ESP Funding Request Balances.rdl" />
     <Report Include="NWO ESP Network Partner Engaged Companies.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />

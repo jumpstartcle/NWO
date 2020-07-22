@@ -55,7 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="NWO Client Engagement Letter Review.rdl" />
-    <Report Include="NWO Client Service Records where the Lead Advisor is Blank.rdl" />
     <Report Include="NWO ESP Do Not Survey Audit.rdl" />
     <Report Include="NWO ESP Quarterly Report SpinOff Connections Detail.rdl" />
     <Report Include="NWO Multiple Contacts Same Email Address.rdl" />
@@ -66,7 +65,6 @@
     <Report Include="NWO Organizations that are Non-Tech QDF but not ESP QDF.rdl" />
     <Report Include="NWO Organizations that are Not ESP QDF and Not Non-Tech QDF.rdl" />
     <Report Include="NWO Organizations that are Not QDF.rdl" />
-    <Report Include="NWO Organizations with Multiple Client Services Records.rdl" />
     <Report Include="NWO Organizations with Multiple Point in Time Records for the Same Date.rdl" />
     <Report Include="NWO Organizations with Multiple Time Period Data Records for the Same Date.rdl" />
     <Report Include="NWO Source Tranche Release Record Mismatch.rdl" />
