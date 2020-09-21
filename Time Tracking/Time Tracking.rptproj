@@ -52,8 +52,5 @@
     <DataSource Include="NWO_SF_Vault-Shared.rds" />
     <DataSource Include="SF_NWODev-Shared.rds" />
   </ItemGroup>
-  <ItemGroup>
-    <Report Include="NWO Collaborator Time Tracking Details By Month.rdl" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

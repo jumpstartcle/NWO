@@ -49,8 +49,20 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <Report Include="NWO CSR OpenTasks.rdl" />
+    <Report Include="NWO Deal Flow Meeting PrePost Report.rdl" />
+    <Report Include="NWO DealFlowMeeting OpenTask SUBREPORT.rdl" />
+    <Report Include="NWO ESP Collaborator Pre PostSeed PostSeedPlus Monthly Time.rdl" />
     <Report Include="NWO ESP Funding Request Balances.rdl" />
     <Report Include="NWO ESP Network Partner Engaged Companies.rdl" />
+    <Report Include="NWO ESP Network Partner Hours by Staff by Company Investment Stage.rdl" />
+    <Report Include="NWO ESP Quarterly Report Ethnicity Minority Fields Detail.rdl" />
+    <Report Include="NWO ESP Quarterly Report QDF Detail.rdl" />
+    <Report Include="NWO ESP Quarterly Report Referral Data Detail.rdl" />
+    <Report Include="NWO ESP Quarterly Semi-Annual Report Client Detail.rdl" />
+    <Report Include="NWO ODSA ESP Client List - Active Client Status Update (Tab 2).rdl" />
+    <Report Include="NWO ODSA ESP Client List - Client Metrics (Tab 3).rdl" />
+    <Report Include="NWO ODSA ESP Quarterly Report.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
